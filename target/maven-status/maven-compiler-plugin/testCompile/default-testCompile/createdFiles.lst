@@ -1,0 +1,4 @@
+com\qa\base\BaseTest.class
+com\qa\userTest\LoginTest.class
+com\qa\userTest\BuyProduct.class
+com\qa\adminTest\CategoriesTest.class

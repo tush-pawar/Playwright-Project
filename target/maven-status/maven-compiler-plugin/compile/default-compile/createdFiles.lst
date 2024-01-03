@@ -1,0 +1,12 @@
+com\qa\adminPages\HomePage.class
+com\qa\adminPages\ManufacturersPage.class
+com\qa\adminPages\ProductPage.class
+com\qa\adminPages\AdminLoginPage.class
+com\qa\factory\playwrightFactory.class
+com\qa\userPages\UserHomePage.class
+com\qa\adminPages\CategoryPage.class
+com\qa\adminPages\CurrenciesPage.class
+com\qa\dataObject\RegistrationDO.class
+com\qa\listeners\ExtentReportListener.class
+com\qa\userPages\UserLoginPage.class
+com\qa\userPages\UserRegisterPage.class

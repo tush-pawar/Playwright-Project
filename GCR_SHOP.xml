@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GCR Shop Admin test Suite" verbose="4" parallel="tests"
+	thread-count="4">
+
+	<test name="GCR Shop Admin Login Test_chrome">
+		<parameter name="browser" value="chromium"></parameter>
+		<classes>
+			<class name="com.qa.adminTest.AdminLoginTest" />
+		</classes>
+	</test>
+
+	<test name="GCR Shop Manufacturers Test_chrome">
+		<parameter name="browser" value="chromium"></parameter>
+		<classes>
+			<class name="com.qa.adminTest.ManufacturersTest" />
+		</classes>
+	</test>
+
+	<test name="GCR Shop Categories Test_chrome">
+		<parameter name="browser" value="chromium"></parameter>
+		<classes>
+			<class name="com.qa.adminTest.CategoriesTest" />
+		</classes>
+	</test>
+
+	<test name="GCR Shop Product Test_chrome">
+		<parameter name="browser" value="chromium"></parameter>
+		<classes>
+			<class name="com.qa.adminTest.ProductTest" />
+		</classes>
+	</test>
+
+</suite>

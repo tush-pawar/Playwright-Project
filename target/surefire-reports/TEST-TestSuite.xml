@@ -1,88 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="29.07" tests="18" errors="0" skipped="6" failures="9">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="103.155" tests="13" errors="0" skipped="0" failures="13">
   <properties>
-    <property name="sun.desktop" value="windows"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.specification.version" value="11"/>
+    <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Users\DELL\OneDrive\Desktop\Project_Office\Live_Project\target\test-classes;C:\Users\DELL\OneDrive\Desktop\Project_Office\Live_Project\target\classes;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.39.0\playwright-1.39.0.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.39.0\driver-1.39.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.39.0\driver-bundle-1.39.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\DELL\.m2\repository\com\aventstack\extentreports\5.0.8\extentreports-5.0.8.jar;C:\Users\DELL\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\DELL\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\DELL\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="java.vm.specification.version" value="11"/>
     <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
-    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire6283070266447368214\surefirebooter-20240103155732319_3.jar C:\Users\DELL\AppData\Local\Temp\surefire6283070266447368214 2024-01-03T15-57-31_502-jvmRun1 surefire-20240103155732319_1tmp surefire_0-20240103155732319_2tmp"/>
+    <property name="sun.boot.library.path" value="C:\Users\DELL\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire9752302650382575342\surefirebooter-20240103172645347_3.jar C:\Users\DELL\AppData\Local\Temp\surefire9752302650382575342 2024-01-03T17-26-45_211-jvmRun1 surefire-20240103172645347_1tmp surefire_0-20240103172645347_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\DELL\OneDrive\Desktop\Project_Office\Live_Project\target\test-classes;C:\Users\DELL\OneDrive\Desktop\Project_Office\Live_Project\target\classes;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.39.0\playwright-1.39.0.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.39.0\driver-1.39.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.39.0\driver-bundle-1.39.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\DELL\.m2\repository\com\aventstack\extentreports\5.0.8\extentreports-5.0.8.jar;C:\Users\DELL\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\DELL\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\DELL\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\DELL"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2023-04-18"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-11"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Users\DELL\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre"/>
     <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
     <property name="basedir" value="C:\Users\DELL\OneDrive\Desktop\Project_Office\Live_Project"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire6283070266447368214\surefirebooter-20240103155732319_3.jar"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire9752302650382575342\surefirebooter-20240103172645347_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="11.0.19+9-LTS-224"/>
+    <property name="java.runtime.version" value="17.0.9+9"/>
     <property name="user.name" value="DELL"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="18.9"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.9+9"/>
     <property name="localRepository" value="C:\Users\DELL\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="C:\Users\DELL\AppData\Local\Temp\"/>
-    <property name="java.version" value="11.0.19"/>
+    <property name="java.version" value="17.0.9"/>
     <property name="user.dir" value="C:\Users\DELL\OneDrive\Desktop\Project_Office\Live_Project"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-11\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\DELL\Downloads\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\Users\DELL\scoop\shims;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Users\DELL\AppData\Roaming\npm;C:\Program Files\Java\jdk-11\bin;D:\allure-2.24.1\allure-2.24.1\bin;;."/>
-    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\DELL\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/DELL/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858/jre/bin/server;C:/Users/DELL/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-11\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\DELL\Downloads\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin;C:\Users\DELL\scoop\shims;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Users\DELL\AppData\Roaming\npm;C:\Program Files\Java\jdk-11\bin;D:\allure-2.24.1\allure-2.24.1\bin;;C:\Users\DELL\eclipse\java-2023-092\eclipse;;."/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.vm.version" value="11.0.19+9-LTS-224"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.9+9"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="55.0"/>
+    <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="beforeCalss" classname="com.qa.adminTest.ProductTest" time="0.014">
-    <failure message="java.util.Random.nextInt(II)I" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: java.util.Random.nextInt(II)I
-	at com.qa.adminTest.ProductTest.beforeCalss(ProductTest.java:36)
+  <testcase name="loginTest" classname="com.qa.adminTest.AdminLoginTest" time="1.667">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.qa.adminTest.AdminLoginTest.loginTest(AdminLoginTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 ]]></failure>
     <system-out><![CDATA[...
 ... TestNG 7.7.1 by Cédric Beust (cedric@beust.com)
@@ -94,90 +98,189 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="addNewProduct" classname="com.qa.adminTest.ProductTest" time="0.0">
-    <skipped message="java.util.Random.nextInt(II)I"/>
-  </testcase>
-  <testcase name="tearDown" classname="com.qa.adminTest.ProductTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="tearDown" classname="com.qa.adminTest.ProductTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="addProductUnderCatgory" classname="com.qa.adminTest.ProductTest" time="0.0">
-    <skipped message="java.util.Random.nextInt(II)I"/>
-  </testcase>
-  <testcase name="afterTest" classname="com.qa.adminTest.ProductTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="afterSuit" classname="com.qa.adminTest.ProductTest" time="0.0">
-    <skipped/>
-    <system-err><![CDATA[com.microsoft.playwright.PlaywrightException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1085)
-	at com.microsoft.playwright.impl.PageImpl.lambda$screenshot$65(PageImpl.java:1029)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1029)
-	at com.qa.base.BaseTest.screenshot(BaseTest.java:100)
-	at com.qa.base.BaseTest.tearDown(BaseTest.java:79)
+  <testcase name="loginWithInvalidData" classname="com.qa.adminTest.AdminLoginTest" time="0.62">
+    <failure message="expected [ Error: Invalid administrator login attempt.] but found [ Error: The maximum number of login attempts has been reached. Please try again in 5 minutes.]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [ Error: Invalid administrator login attempt.] but found [ Error: The maximum number of login attempts has been reached. Please try again in 5 minutes.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.qa.adminTest.AdminLoginTest.loginWithInvalidData(AdminLoginTest.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+]]></failure>
+  </testcase>
+  <testcase name="addNewManufacture" classname="com.qa.adminTest.ManufacturersTest" time="29.608">
+    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)&#10;    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)&#10;    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)&#10;}" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
 }
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:577)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.qa.adminPages.HomePage.clickOnCatalog(HomePage.java:17)
+	at com.qa.adminTest.ManufacturersTest.addNewManufacture(ManufacturersTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 36 more
-]]></system-err>
+	... 34 more
+]]></failure>
   </testcase>
-  <testcase name="loginTest" classname="com.qa.adminTest.AdminLoginTest" time="5.763"/>
-  <testcase name="loginWithInvalidData" classname="com.qa.adminTest.AdminLoginTest" time="1.607"/>
-  <testcase name="createNewCategory" classname="com.qa.adminTest.CategoriesTest" time="2.357"/>
-  <testcase name="updateCategory" classname="com.qa.adminTest.CategoriesTest" time="0.344">
-    <failure message="Error {&#10;  message=&apos;Page closed&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;Error&#10;  stack=&apos;Error: Page closed&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;    at LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:96:51)&#10;    at LongStandingScope.race (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:87:17)&#10;    at C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:84:43&#10;    at Array.map (&lt;anonymous&gt;)&#10;    at LongStandingScope.raceMultiple (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:84:32)&#10;    at Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\frames.js:908:40)&#10;    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\frames.js:996:29&#10;    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\progress.js:92:22)&#10;    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\frameDispatcher.js:154:12)&#10;    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:346:22)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
+  <testcase name="updateManufacturer" classname="com.qa.adminTest.ManufacturersTest" time="30.468">
+    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)&#10;    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)&#10;    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)&#10;}" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:577)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.qa.adminPages.HomePage.clickOnCatalog(HomePage.java:17)
+	at com.qa.adminTest.ManufacturersTest.updateManufacturer(ManufacturersTest.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 34 more
+]]></failure>
+  </testcase>
+  <testcase name="deleteManufacturer" classname="com.qa.adminTest.ManufacturersTest" time="28.674">
+    <failure message="Error {&#10;  message=&apos;Page closed&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;Error&#10;  stack=&apos;Error: Page closed&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;    at LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:96:51)&#10;    at LongStandingScope.race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:87:17)&#10;    at C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:84:43&#10;    at Array.map (&lt;anonymous&gt;)&#10;    at LongStandingScope.raceMultiple (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:84:32)&#10;    at Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:908:40)&#10;    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:996:29&#10;    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:92:22)&#10;    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:12)&#10;    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:22)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
 Error {
   message='Page closed
 =========================== logs ===========================
@@ -188,16 +291,16 @@ waiting for locator("xpath=//a[text()=\"Catalog\"]")
 =========================== logs ===========================
 waiting for locator("xpath=//a[text()=\"Catalog\"]")
 ============================================================
-    at LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:96:51)
-    at LongStandingScope.race (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:87:17)
-    at C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:84:43
+    at LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:96:51)
+    at LongStandingScope.race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:87:17)
+    at C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:84:43
     at Array.map (<anonymous>)
-    at LongStandingScope.raceMultiple (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:84:32)
-    at Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\frames.js:908:40)
-    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\frames.js:996:29
-    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\progress.js:92:22)
-    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\frameDispatcher.js:154:12)
-    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:346:22)
+    at LongStandingScope.raceMultiple (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:84:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:908:40)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:996:29
+    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:12)
+    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:22)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
@@ -212,11 +315,11 @@ waiting for locator("xpath=//a[text()=\"Catalog\"]")
 	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
 	at com.microsoft.playwright.Page.click(Page.java:3741)
 	at com.qa.adminPages.HomePage.clickOnCatalog(HomePage.java:17)
-	at com.qa.adminTest.CategoriesTest.updateCategory(CategoriesTest.java:66)
+	at com.qa.adminTest.ManufacturersTest.deleteManufacturer(ManufacturersTest.java:89)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -225,16 +328,16 @@ waiting for locator("xpath=//a[text()=\"Catalog\"]")
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: com.microsoft.playwright.impl.DriverException: Error {
   message='Page closed
 =========================== logs ===========================
@@ -245,18 +348,240 @@ waiting for locator("xpath=//a[text()=\"Catalog\"]")
 =========================== logs ===========================
 waiting for locator("xpath=//a[text()=\"Catalog\"]")
 ============================================================
-    at LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:96:51)
-    at LongStandingScope.race (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:87:17)
-    at C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:84:43
+    at LongStandingScope._race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:96:51)
+    at LongStandingScope.race (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:87:17)
+    at C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:84:43
     at Array.map (<anonymous>)
-    at LongStandingScope.raceMultiple (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\utils\manualPromise.js:84:32)
-    at Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\frames.js:908:40)
-    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\frames.js:996:29
-    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\progress.js:92:22)
-    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\frameDispatcher.js:154:12)
-    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:346:22)
+    at LongStandingScope.raceMultiple (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\utils\manualPromise.js:84:32)
+    at Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:908:40)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:996:29
+    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:92:22)
+    at async FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:12)
+    at async DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:22)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 34 more
+]]></failure>
+  </testcase>
+  <testcase name="createNewCategory" classname="com.qa.adminTest.CategoriesTest" time="29.716">
+    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)&#10;    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)&#10;    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)&#10;}" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:577)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.qa.adminPages.HomePage.clickOnCatalog(HomePage.java:17)
+	at com.qa.adminTest.CategoriesTest.createNewCategory(CategoriesTest.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 34 more
+]]></failure>
+  </testcase>
+  <testcase name="updateCategory" classname="com.qa.adminTest.CategoriesTest" time="0.054">
+    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)&#10;    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)&#10;    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)&#10;}" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:577)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.qa.adminPages.HomePage.clickOnCatalog(HomePage.java:17)
+	at com.qa.adminTest.CategoriesTest.updateCategory(CategoriesTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 34 more
+]]></failure>
+  </testcase>
+  <testcase name="deleteCategory" classname="com.qa.adminTest.CategoriesTest" time="30.679">
+    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)&#10;    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)&#10;    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)&#10;}" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:577)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.qa.adminPages.HomePage.clickOnCatalog(HomePage.java:17)
+	at com.qa.adminTest.CategoriesTest.deleteCategory(CategoriesTest.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
 	... 34 more
@@ -265,9 +590,9 @@ waiting for locator("xpath=//a[text()=\"Catalog\"]")
   message='Target page, context or browser has been closed
   name='Error
   stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)
     at process.processImmediate (node:internal/timers:476:21)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
@@ -282,9 +607,9 @@ waiting for locator("xpath=//a[text()=\"Catalog\"]")
 	at com.qa.base.BaseTest.screenshot(BaseTest.java:100)
 	at com.qa.base.BaseTest.tearDown(BaseTest.java:79)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
@@ -298,23 +623,23 @@ waiting for locator("xpath=//a[text()=\"Catalog\"]")
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: com.microsoft.playwright.impl.DriverException: Error {
   message='Target page, context or browser has been closed
   name='Error
   stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)
     at process.processImmediate (node:internal/timers:476:21)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
@@ -323,34 +648,47 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
 	... 36 more
 ]]></system-err>
   </testcase>
-  <testcase name="deleteCategory" classname="com.qa.adminTest.CategoriesTest" time="0.0">
-    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)&#10;    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)&#10;    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)&#10;    at process.processImmediate (node:internal/timers:476:21)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
+  <testcase name="addSubcategoryInCategory" classname="com.qa.adminTest.CategoriesTest" time="0.731">
+    <failure message="Error {&#10;  message=&apos;Target closed&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target closed&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;    at C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\chromium\crConnection.js:145:16&#10;    at new Promise (&lt;anonymous&gt;)&#10;    at CRSession.send (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\chromium\crConnection.js:141:12)&#10;    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\chromium\crExecutionContext.js:78:28)&#10;    at FrameExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\javascript.js:61:61)&#10;    at evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\javascript.js:241:26)&#10;    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:941:22&#10;    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:912:24)&#10;    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:996:29&#10;    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:92:22)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
 Error {
-  message='Target page, context or browser has been closed
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
   name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\chromium\crConnection.js:145:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\chromium\crConnection.js:141:12)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\chromium\crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\javascript.js:61:61)
+    at evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\javascript.js:241:26)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:941:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:912:24)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:996:29
+    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:92:22)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
 	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
 	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$45(PageImpl.java:827)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:577)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
 	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:827)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-	at com.microsoft.playwright.Page.navigate(Page.java:5282)
-	at com.qa.adminPages.AdminLoginPage.goToAdminLoginPage(AdminLoginPage.java:24)
-	at com.qa.adminTest.CategoriesTest.deleteCategory(CategoriesTest.java:90)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.qa.adminPages.HomePage.clickOnCatalog(HomePage.java:17)
+	at com.qa.adminTest.CategoriesTest.addSubcategoryInCategory(CategoriesTest.java:125)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -359,223 +697,52 @@ Error {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Target page, context or browser has been closed
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
   name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\chromium\crConnection.js:145:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\chromium\crConnection.js:141:12)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\chromium\crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\javascript.js:61:61)
+    at evaluateExpression (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\javascript.js:241:26)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:941:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:912:24)
+    at async C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:996:29
+    at async ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:92:22)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 33 more
+	... 34 more
 ]]></failure>
-    <system-err><![CDATA[com.microsoft.playwright.PlaywrightException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1085)
-	at com.microsoft.playwright.impl.PageImpl.lambda$screenshot$65(PageImpl.java:1029)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1029)
-	at com.qa.base.BaseTest.screenshot(BaseTest.java:100)
-	at com.qa.base.BaseTest.tearDown(BaseTest.java:79)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 36 more
-]]></system-err>
-  </testcase>
-  <testcase name="addSubcategoryInCategory" classname="com.qa.adminTest.CategoriesTest" time="0.0">
-    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)&#10;    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)&#10;    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)&#10;    at process.processImmediate (node:internal/timers:476:21)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
-Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$45(PageImpl.java:827)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:827)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-	at com.microsoft.playwright.Page.navigate(Page.java:5282)
-	at com.qa.adminPages.AdminLoginPage.goToAdminLoginPage(AdminLoginPage.java:24)
-	at com.qa.adminTest.CategoriesTest.addSubcategoryInCategory(CategoriesTest.java:119)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 33 more
-]]></failure>
-    <system-err><![CDATA[com.microsoft.playwright.PlaywrightException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1085)
-	at com.microsoft.playwright.impl.PageImpl.lambda$screenshot$65(PageImpl.java:1029)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1029)
-	at com.qa.base.BaseTest.screenshot(BaseTest.java:100)
-	at com.qa.base.BaseTest.tearDown(BaseTest.java:79)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 36 more
-]]></system-err>
   </testcase>
   <testcase name="updateSubcategory" classname="com.qa.adminTest.CategoriesTest" time="0.0">
-    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)&#10;    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)&#10;    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)&#10;    at process.processImmediate (node:internal/timers:476:21)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
+    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)&#10;    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)&#10;    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)&#10;    at process.processImmediate (node:internal/timers:476:21)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
 Error {
   message='Target page, context or browser has been closed
   name='Error
   stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)
     at process.processImmediate (node:internal/timers:476:21)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
@@ -592,9 +759,9 @@ Error {
 	at com.qa.adminPages.AdminLoginPage.goToAdminLoginPage(AdminLoginPage.java:24)
 	at com.qa.adminTest.CategoriesTest.updateSubcategory(CategoriesTest.java:155)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -603,23 +770,23 @@ Error {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: com.microsoft.playwright.impl.DriverException: Error {
   message='Target page, context or browser has been closed
   name='Error
   stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)
     at process.processImmediate (node:internal/timers:476:21)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
@@ -631,9 +798,9 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
   message='Target page, context or browser has been closed
   name='Error
   stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)
     at process.processImmediate (node:internal/timers:476:21)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
@@ -648,9 +815,9 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
 	at com.qa.base.BaseTest.screenshot(BaseTest.java:100)
 	at com.qa.base.BaseTest.tearDown(BaseTest.java:79)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
@@ -664,23 +831,23 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: com.microsoft.playwright.impl.DriverException: Error {
   message='Target page, context or browser has been closed
   name='Error
   stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)
     at process.processImmediate (node:internal/timers:476:21)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
@@ -690,14 +857,14 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
 ]]></system-err>
   </testcase>
   <testcase name="deleteSubcategory" classname="com.qa.adminTest.CategoriesTest" time="0.0">
-    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)&#10;    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)&#10;    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)&#10;    at process.processImmediate (node:internal/timers:476:21)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
+    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)&#10;    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)&#10;    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)&#10;    at process.processImmediate (node:internal/timers:476:21)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
 Error {
   message='Target page, context or browser has been closed
   name='Error
   stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)
     at process.processImmediate (node:internal/timers:476:21)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
@@ -714,9 +881,9 @@ Error {
 	at com.qa.adminPages.AdminLoginPage.goToAdminLoginPage(AdminLoginPage.java:24)
 	at com.qa.adminTest.CategoriesTest.deleteSubcategory(CategoriesTest.java:184)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -725,23 +892,23 @@ Error {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: com.microsoft.playwright.impl.DriverException: Error {
   message='Target page, context or browser has been closed
   name='Error
   stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)
     at process.processImmediate (node:internal/timers:476:21)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
@@ -753,9 +920,9 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
   message='Target page, context or browser has been closed
   name='Error
   stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)
     at process.processImmediate (node:internal/timers:476:21)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
@@ -770,9 +937,9 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
 	at com.qa.base.BaseTest.screenshot(BaseTest.java:100)
 	at com.qa.base.BaseTest.tearDown(BaseTest.java:79)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
@@ -786,23 +953,23 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: com.microsoft.playwright.impl.DriverException: Error {
   message='Target page, context or browser has been closed
   name='Error
   stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:260:49)
+    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\protocol\transport.js:77:34)
     at process.processImmediate (node:internal/timers:476:21)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
@@ -811,34 +978,41 @@ Caused by: com.microsoft.playwright.impl.DriverException: Error {
 	... 36 more
 ]]></system-err>
   </testcase>
-  <testcase name="addNewManufacture" classname="com.qa.adminTest.ManufacturersTest" time="5.446">
-    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)&#10;    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)&#10;    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)&#10;    at process.processImmediate (node:internal/timers:476:21)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
+  <testcase name="addNewProduct" classname="com.qa.adminTest.ProductTest" time="29.733">
+    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)&#10;    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)&#10;    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)&#10;}" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
 Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
 }
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
 	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
 	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.evalOnSelectorAllImpl(FrameImpl.java:165)
-	at com.microsoft.playwright.impl.FrameImpl.lambda$evalOnSelectorAll$4(FrameImpl.java:157)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:577)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
 	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.FrameImpl.evalOnSelectorAll(FrameImpl.java:157)
-	at com.microsoft.playwright.Frame.evalOnSelectorAll(Frame.java:2810)
-	at com.microsoft.playwright.impl.LocatorImpl.allTextContents(LocatorImpl.java:91)
-	at com.qa.adminPages.ManufacturersPage.checkAddedManufacturer(ManufacturersPage.java:53)
-	at com.qa.adminTest.ManufacturersTest.addNewManufacture(ManufacturersTest.java:43)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.qa.adminPages.HomePage.clickOnCatalog(HomePage.java:17)
+	at com.qa.adminTest.ProductTest.addNewProduct(ProductTest.java:60)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -847,59 +1021,72 @@ Error {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
 }
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 33 more
+	... 34 more
 ]]></failure>
   </testcase>
-  <testcase name="updateManufacturer" classname="com.qa.adminTest.ManufacturersTest" time="0.0">
-    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)&#10;    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)&#10;    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)&#10;    at process.processImmediate (node:internal/timers:476:21)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
+  <testcase name="addProductUnderCatgory" classname="com.qa.adminTest.ProductTest" time="0.088">
+    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=//a[text()=\&quot;Catalog\&quot;]&quot;)&#10;============================================================&#10;    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)&#10;    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)&#10;    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)&#10;}" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
 Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
 }
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
 	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
 	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$45(PageImpl.java:827)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:577)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
 	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:827)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-	at com.microsoft.playwright.Page.navigate(Page.java:5282)
-	at com.qa.adminPages.AdminLoginPage.goToAdminLoginPage(AdminLoginPage.java:24)
-	at com.qa.adminTest.ManufacturersTest.updateManufacturer(ManufacturersTest.java:54)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.qa.adminPages.HomePage.clickOnCatalog(HomePage.java:17)
+	at com.qa.adminTest.ProductTest.addProductUnderCatgory(ProductTest.java:86)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -908,212 +1095,35 @@ Error {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:829)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//a[text()=\"Catalog\"]")
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1364858498315790910\package\lib\server\dispatchers\dispatcher.js:346:46)
 }
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 33 more
+	... 34 more
 ]]></failure>
-    <system-err><![CDATA[com.microsoft.playwright.PlaywrightException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1085)
-	at com.microsoft.playwright.impl.PageImpl.lambda$screenshot$65(PageImpl.java:1029)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1029)
-	at com.qa.base.BaseTest.screenshot(BaseTest.java:100)
-	at com.qa.base.BaseTest.tearDown(BaseTest.java:79)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 36 more
-]]></system-err>
-  </testcase>
-  <testcase name="deleteManufacturer" classname="com.qa.adminTest.ManufacturersTest" time="0.0">
-    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)&#10;    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)&#10;    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)&#10;    at process.processImmediate (node:internal/timers:476:21)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
-Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$45(PageImpl.java:827)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:827)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-	at com.microsoft.playwright.Page.navigate(Page.java:5282)
-	at com.qa.adminPages.AdminLoginPage.goToAdminLoginPage(AdminLoginPage.java:24)
-	at com.qa.adminTest.ManufacturersTest.deleteManufacturer(ManufacturersTest.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 33 more
-]]></failure>
-    <system-err><![CDATA[com.microsoft.playwright.PlaywrightException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1085)
-	at com.microsoft.playwright.impl.PageImpl.lambda$screenshot$65(PageImpl.java:1029)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1029)
-	at com.qa.base.BaseTest.screenshot(BaseTest.java:100)
-	at com.qa.base.BaseTest.tearDown(BaseTest.java:79)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Target page, context or browser has been closed
-  name='Error
-  stack='Error: Target page, context or browser has been closed
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\server\dispatchers\dispatcher.js:260:49)
-    at transport.onmessage (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\cli\driver.js:52:57)
-    at Immediate._onImmediate (C:\Users\DELL\AppData\Local\Temp\playwright-java-16974859153943116240\package\lib\protocol\transport.js:77:34)
-    at process.processImmediate (node:internal/timers:476:21)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 36 more
-]]></system-err>
   </testcase>
 </testsuite>

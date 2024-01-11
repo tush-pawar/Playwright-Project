@@ -1,6 +1,6 @@
 package com.qa.adminTest;
 
-import java.util.Random;
+import java.util.*;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;

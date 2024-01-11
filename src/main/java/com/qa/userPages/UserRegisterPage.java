@@ -1,5 +1,6 @@
 package com.qa.userPages;
 
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
 public class UserRegisterPage {
@@ -22,7 +23,6 @@ public class UserRegisterPage {
 	private String password = "input[name=\"password\"]";
 	private String confirmPassword = "input[name=\"confirmation\"]";
 	private String message = "div.grid_16 h1";
-	
 
 	public UserRegisterPage(Page page) {
 		this.page = page;
@@ -91,10 +91,10 @@ public class UserRegisterPage {
 	public void clickOnContinueButton() {
 		page.click(continueButton);
 	}
-	
+
 	public String accountCreatedMessage() {
 		return page.locator(message).textContent();
-		
+
 	}
 
 }

@@ -1,4 +1,10 @@
+com\qa\adminTest\CurrencyTest.class
+com\qa\adminTest\Demo.class
 com\qa\base\BaseTest.class
+com\qa\adminTest\ProductTest.class
+com\qa\adminTest\ManufacturersTest.class
 com\qa\userTest\LoginTest.class
 com\qa\userTest\BuyProduct.class
+com\qa\userTest\RegisterUser.class
 com\qa\adminTest\CategoriesTest.class
+com\qa\adminTest\AdminLoginTest.class

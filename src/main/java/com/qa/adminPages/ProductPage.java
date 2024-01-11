@@ -3,6 +3,7 @@ package com.qa.adminPages;
 import java.util.List;
 
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.LoadState;
 
 public class ProductPage {
 
@@ -18,8 +19,10 @@ public class ProductPage {
 	private String productDiscription = "textarea[name=\"products_description[1]\"]";
 	private String productQuantity = "input[name=\"products_quantity\"]";
 	private String productModel = "input[name=\"products_model\"]";
-	private String saveButton = "//span[text()=\"Save\"]";
-	private String products = "td[class=\"dataTableContent\"]";
+	private String saveButton = "//span[text()='Save']";
+	private String products = "//img[@src='images/icon_status_green.gif']//parent::td//preceding-sibling::td";
+	private String edit = "//span[text()='Edit']";
+	private String delete = "//span[text()='Delete']";
 
 	public ProductPage(Page page) {
 
@@ -42,19 +45,67 @@ public class ProductPage {
 		page.fill(this.productQuantity, productQuantity);
 		page.fill(this.productModel, productModel);
 		page.click(saveButton);
+		page.waitForLoadState(LoadState.NETWORKIDLE);
 
 	}
 
 	public boolean checkAddedProduct(String productName) {
 
 		List<String> allProducts = page.locator(this.products).allTextContents();
-		System.out.println(" " + productName);
-		for (int i = 0; i < allProducts.size(); i += 3) {
-			System.out.println(page.locator(this.products).nth(i).textContent());
-			if (page.locator(this.products).nth(i).textContent().equalsIgnoreCase(productName)) {
+		for (int i = 0; i < allProducts.size(); i++) {
+			if (allProducts.get(i).trim().contains(productName)) {
 				return true;
 			}
 		}
 		return false;
 	}
+
+	public void clickOnProduct(String productName) {
+		page.waitForLoadState(LoadState.NETWORKIDLE);
+		List<String> allProducts = page.locator(this.products).allTextContents();
+		for (int i = 0; i < allProducts.size(); i++) {
+			if (allProducts.get(i).trim().contains(productName)) {
+				page.locator(this.products).nth(i).click();
+			}
+		}
+
+	}
+
+	public void updateProduct(String productName, String productQuantity) {
+
+		page.click(edit);
+//		page.click(outOfStock);
+		page.fill(this.productName, productName);
+		page.fill(this.productQuantity, productQuantity);
+		page.click(saveButton);
+
+	}
+
+	public boolean checkUpdatedProduct(String productName) {
+		page.waitForLoadState(LoadState.NETWORKIDLE);
+		List<String> allProducts = page.locator(this.products).allTextContents();
+		for (int i = 0; i < allProducts.size(); i++) {
+			if (allProducts.get(i).trim().contains(productName)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public void deleteProduct(String productName) {
+		page.click(delete);
+		page.click(delete);
+	}
+
+	public boolean checkDeleteProduct(String productName) {
+		page.waitForLoadState(LoadState.NETWORKIDLE);
+		List<String> allProducts = page.locator(this.products).allTextContents();
+		for (int i = 0; i < allProducts.size(); i++) {
+			if (allProducts.get(i).trim().contains(productName)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 }

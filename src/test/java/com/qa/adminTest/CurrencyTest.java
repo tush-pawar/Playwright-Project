@@ -1,13 +1,12 @@
 package com.qa.adminTest;
 
-import java.util.Random;
+import java.util.*;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.qa.adminPages.AdminLoginPage;
-import com.qa.adminPages.CategoryPage;
 import com.qa.adminPages.CurrenciesPage;
 import com.qa.adminPages.HomePage;
 import com.qa.base.BaseTest;
@@ -29,11 +28,11 @@ public class CurrencyTest extends BaseTest {
 		homePage = new HomePage(page);
 		currenciesPage = new CurrenciesPage(page);
 		currencyTitle = "currency_" + new Random().nextInt(999);
-		currencyCode = "#" + new Random().nextInt(99);
-		decimalPoint = "" + new Random().nextInt(0,2);
-		thousandsPoint = "" + new Random().nextInt(0,1);
-		decimalPlaces = "" + new Random().nextInt(0,2);
-		decimalPlaces = "" + new Random().nextInt(0,2);
+		currencyCode = "#" + 99;
+		decimalPoint = "" + 2;
+		thousandsPoint = "" + 1;
+		decimalPlaces = "" + 1;
+		decimalPlaces = "" +1;
 		value = "" + new Random().nextInt(999);
 		symbolLeft = "";
 		symbolRight = "RS";
@@ -140,9 +139,7 @@ public class CurrencyTest extends BaseTest {
 		currenciesPage.clickOnCurrenciesTab();
 
 		extentTest.info("Add new Currency");
-		System.out.println(currencyTitle);
 		currencyTitle = "currency_" + new Random().nextInt(9999);
-		System.out.println(currencyTitle);
 		value = "" + new Random().nextInt(999);
 		currenciesPage.addNewCurrency(currencyTitle, currencyCode, symbolLeft, symbolRight, decimalPoint,
 				thousandsPoint, decimalPlaces, value);

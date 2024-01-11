@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" parallel="methods" name="Failed suite [Open Cart Test Regression PW Suite]" guice-stage="DEVELOPMENT" verbose="4">
-  <test thread-count="1" parallel="methods" name="Open Cart Home Page Test_chrome(failed)" verbose="4">
+  <test thread-count="1" parallel="methods" name="GCR Shop Product Test_chrome(failed)" verbose="4">
     <parameter name="browser" value="chromium"/>
     <classes>
-      <class name="com.qa.userTest.RegisterUser">
+      <class name="com.qa.adminTest.ProductTest">
         <methods>
-          <include name="afterTest"/>
+          <include name="updateProductInategory"/>
           <include name="tearDown"/>
-          <include name="ragisterUser"/>
+          <include name="afterTest"/>
           <include name="setup"/>
           <include name="afterSuit"/>
-          <include name="beforeCalss"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.qa.userTest.RegisterUser -->
+      </class> <!-- com.qa.adminTest.ProductTest -->
     </classes>
-  </test> <!-- Open Cart Home Page Test_chrome(failed) -->
+  </test> <!-- GCR Shop Product Test_chrome(failed) -->
 </suite> <!-- Failed suite [Open Cart Test Regression PW Suite] -->

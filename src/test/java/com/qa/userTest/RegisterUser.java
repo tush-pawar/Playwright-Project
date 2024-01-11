@@ -24,9 +24,9 @@ public class RegisterUser extends BaseTest {
 		userHomePage = new UserHomePage(page, prop);
 		userLoginPage = new UserLoginPage(page, prop);
 		userRegisterPage = new UserRegisterPage(page);
-		dd = "" + new Random().nextInt(10, 25);
-		mm = "" + new Random().nextInt(10, 12);
-		yyyy = "" + new Random().nextInt(1990, 2000);
+		dd = "" + 25;
+		mm = "" +10;
+		yyyy = "" +1999;
 		dob = mm + "/" + dd + "/" + yyyy;
 		email="test"+new Random().nextInt(999)+"@test.com";
 	}

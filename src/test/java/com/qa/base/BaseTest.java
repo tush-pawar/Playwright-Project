@@ -1,8 +1,10 @@
 package com.qa.base;
 
+import java.io.File;
 import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.Properties;
+import java.util.Random;
 
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -47,7 +49,6 @@ public class BaseTest {
 	protected UserHomePage userHomePage;
 	protected UserLoginPage userLoginPage;
 	protected UserRegisterPage userRegisterPage;
-	
 
 	// Extent report variables
 	protected static ExtentReports extentReports;
@@ -61,12 +62,30 @@ public class BaseTest {
 		prop = pf.init_prop();
 		page = pf.initBrowser(browser);
 
+		try {
+			if (extentTest == null) {
+
+				extentReports = new ExtentReports();
+				extentSparkReporter = new ExtentSparkReporter(
+						System.getProperty("user.dir") + "./TestReport/Report.html");
+				extentSparkReporter.config().setTheme(Theme.DARK);
+				extentReports.setSystemInfo("Operating System: ", System.getProperty("os.name"));
+//				extentReports.setSystemInfo("System Name: ", InetAddress.getLocalHost().getHostName());
+//				extentReports.setSystemInfo("System Ipv4 addresss: ", InetAddress.getLocalHost().getHostAddress());
+				extentReports.setSystemInfo("Java Version: ", System.getProperty("java.version"));
+				extentReports.attachReporter(extentSparkReporter);
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 		// Extent report
-		extentReports = new ExtentReports();
-		extentSparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "./TestReport/Report.html");
-		extentSparkReporter.config().setReportName("GCR SHOP Report");
-		extentSparkReporter.config().setTheme(Theme.DARK);
-		extentReports.attachReporter(extentSparkReporter);
+//		extentReports = new ExtentReports();
+//		extentSparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "./TestReport/Report.html");
+//		extentSparkReporter.config().setReportName("GCR SHOP Report");
+//		extentSparkReporter.config().setTheme(Theme.DARK);
+//		extentReports.attachReporter(extentSparkReporter);
 	}
 
 	@AfterMethod
@@ -104,6 +123,11 @@ public class BaseTest {
 
 	private Throwable getTestName(ITestResult result) {
 		return result.getThrowable();
+	}
+
+	public int getRandomSixDigitNumber() {
+		return new Random().nextInt(999999);
+
 	}
 
 }

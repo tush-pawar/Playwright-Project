@@ -42,7 +42,6 @@ public class playwrightFactory {
 
 	public Page initBrowser(String browserName) {
 
-
 		tlPlaywright.set(Playwright.create());
 
 		switch (browserName) {
@@ -51,26 +50,26 @@ public class playwrightFactory {
 			tlBrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
 			break;
 		}
-		
+
 		case "webkit": {
 			tlBrowser.set(getPlaywright().webkit().launch(new BrowserType.LaunchOptions().setHeadless(false)));
 
 			break;
 		}
-		
+
 		case "firefox": {
 			tlBrowser.set(getPlaywright().firefox().launch(new BrowserType.LaunchOptions().setHeadless(false)));
 
 			break;
 		}
-		
+
 		case "chrome": {
 //			browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setChannel("chrome"));
 			tlBrowser.set(getPlaywright().chromium()
 					.launch(new BrowserType.LaunchOptions().setHeadless(false).setChannel("chrome")));
 			break;
 		}
-		
+
 		default:
 			System.out.println("Plese enter right browser name....");
 			break;
@@ -82,7 +81,6 @@ public class playwrightFactory {
 		return getPage();
 	}
 
-	
 	public Properties init_prop() {
 		try {
 			FileInputStream ip = new FileInputStream("./src/test/resources/config/config.properties");
@@ -95,11 +93,9 @@ public class playwrightFactory {
 		}
 		return prop;
 	}
-	
-	
 
 	public static String takeScreenshot() {
-		
+
 		String path = System.getProperty("user.dir") + "/screenshot/" + System.currentTimeMillis() + ".png";
 		byte[] buffer = getPage().screenshot(new Page.ScreenshotOptions().setPath(Paths.get(path)).setFullPage(true));
 		String base64Path = Base64.getEncoder().encodeToString(buffer);

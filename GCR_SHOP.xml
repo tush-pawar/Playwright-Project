@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="GCR Shop Admin test Suite" verbose="1" parallel="tests"
+<suite name="GCR Shop test Suite" verbose="1" parallel="tests"
 	thread-count="1">
 
 	<test name="GCR Shop Admin Login Test_chrome">
@@ -29,6 +29,27 @@
 		<parameter name="browser" value="chromium"></parameter>
 		<classes>
 			<class name="com.qa.adminTest.ProductTest" />
+		</classes>
+	</test>
+	
+	<test name="GCR Shop User Login Test_chrome">
+		 <parameter name="browser" value="chromium"></parameter>
+		<classes>
+			<class name="com.qa.userTest.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="GCR Shop User Register Test_chrome">
+		 <parameter name="browser" value="chromium"></parameter>
+		<classes>
+			<class name="com.qa.userTest.RegisterUser" />
+		</classes>
+	</test>
+	
+	<test name="GCR Shop Buy Product Test_chrome">
+		 <parameter name="browser" value="chromium"></parameter>
+		<classes>
+			<class name="com.qa.userTest.BuyProduct" />
 		</classes>
 	</test>
 

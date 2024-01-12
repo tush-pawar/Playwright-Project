@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="176.03" tests="16" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="174.895" tests="19" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
-    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire3018607305964912960\surefirebooter-20240110195652095_3.jar C:\Users\DELL\AppData\Local\Temp\surefire3018607305964912960 2024-01-10T19-56-51_762-jvmRun1 surefire-20240110195652095_1tmp surefire_0-20240110195652095_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire1786029858810426965\surefirebooter-20240112115956884_3.jar C:\Users\DELL\AppData\Local\Temp\surefire1786029858810426965 2024-01-12T11-59-56_602-jvmRun1 surefire-20240112115956884_1tmp surefire_0-20240112115956884_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\DELL\OneDrive\Desktop\Project_Office\Live_Project\target\test-classes;C:\Users\DELL\OneDrive\Desktop\Project_Office\Live_Project\target\classes;C:\Users\DELL\.m2\repository\com\microsoft\playwright\playwright\1.39.0\playwright-1.39.0.jar;C:\Users\DELL\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver\1.39.0\driver-1.39.0.jar;C:\Users\DELL\.m2\repository\com\microsoft\playwright\driver-bundle\1.39.0\driver-bundle-1.39.0.jar;C:\Users\DELL\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\DELL\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\DELL\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\DELL\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\DELL\.m2\repository\com\aventstack\extentreports\5.0.8\extentreports-5.0.8.jar;C:\Users\DELL\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\DELL\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\DELL\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\DELL\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire3018607305964912960\surefirebooter-20240110195652095_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire1786029858810426965\surefirebooter-20240112115956884_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.19+9-LTS-224"/>
@@ -60,166 +60,104 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="loginTest" classname="com.qa.adminTest.AdminLoginTest" time="3.329">
+  <testcase name="login_Test" classname="com.qa.adminTest.AdminLoginTest" time="8.145">
+    <system-out><![CDATA[Test Suite started!
+login_Test started!
+login_Test passed!
+]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="loginWithInvalidData" classname="com.qa.adminTest.AdminLoginTest" time="1.263"/>
-  <testcase name="addNewManufacture" classname="com.qa.adminTest.ManufacturersTest" time="10.887"/>
-  <testcase name="updateManufacturer" classname="com.qa.adminTest.ManufacturersTest" time="19.035"/>
-  <testcase name="deleteManufacturer" classname="com.qa.adminTest.ManufacturersTest" time="20.144"/>
-  <testcase name="createNewCategory" classname="com.qa.adminTest.CategoriesTest" time="7.428"/>
-  <testcase name="updateCategory" classname="com.qa.adminTest.CategoriesTest" time="4.311"/>
-  <testcase name="deleteCategory" classname="com.qa.adminTest.CategoriesTest" time="3.996"/>
-  <testcase name="addSubcategoryInCategory" classname="com.qa.adminTest.CategoriesTest" time="6.867"/>
-  <testcase name="updateSubcategory" classname="com.qa.adminTest.CategoriesTest" time="4.503"/>
-  <testcase name="deleteSubcategory" classname="com.qa.adminTest.CategoriesTest" time="7.579">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.qa.adminTest.CategoriesTest.deleteSubcategory(CategoriesTest.java:214)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-]]></failure>
-  </testcase>
-  <testcase name="addNewProduct" classname="com.qa.adminTest.ProductTest" time="5.934"/>
-  <testcase name="updateProduct" classname="com.qa.adminTest.ProductTest" time="5.272">
-    <system-out><![CDATA[name of Product: product_935537
-name of Product: product_71
+  <testcase name="login_With_Invalid_Data" classname="com.qa.adminTest.AdminLoginTest" time="2.374">
+    <system-out><![CDATA[login_With_Invalid_Data started!
+login_With_Invalid_Data passed!
 ]]></system-out>
   </testcase>
-  <testcase name="deleteProduct" classname="com.qa.adminTest.ProductTest" time="5.251">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.qa.adminTest.ProductTest.deleteProduct(ProductTest.java:123)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-]]></failure>
-    <system-out><![CDATA[name of Product: product_71
+  <testcase name="add_New_Manufacture" classname="com.qa.adminTest.ManufacturersTest" time="15.706">
+    <system-out><![CDATA[add_New_Manufacture started!
+add_New_Manufacture passed!
 ]]></system-out>
   </testcase>
-  <testcase name="addProductUnderCatgory" classname="com.qa.adminTest.ProductTest" time="7.291"/>
-  <testcase name="updateProductInategory" classname="com.qa.adminTest.ProductTest" time="48.799">
-    <failure message="Error {&#10;  message=&apos;Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;input[name=\&quot;products_name[1]\&quot;]&quot;)&#10;============================================================&#10;  name=&apos;TimeoutError&#10;  stack=&apos;TimeoutError: Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;input[name=\&quot;products_name[1]\&quot;]&quot;)&#10;============================================================&#10;    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\progress.js:88:26)&#10;    at Frame.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\frames.js:1039:23)&#10;    at FrameDispatcher.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\frameDispatcher.js:166:30)&#10;    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\dispatcher.js:346:46)&#10;}" type="com.microsoft.playwright.TimeoutError"><![CDATA[com.microsoft.playwright.TimeoutError: 
-Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("input[name=\"products_name[1]\"]")
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("input[name=\"products_name[1]\"]")
-============================================================
-    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\progress.js:88:26)
-    at Frame.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\frames.js:1039:23)
-    at FrameDispatcher.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\frameDispatcher.js:166:30)
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\dispatcher.js:346:46)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
-	at com.microsoft.playwright.impl.PageImpl.lambda$fill$27(PageImpl.java:656)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:655)
-	at com.microsoft.playwright.Page.fill(Page.java:4545)
-	at com.qa.adminPages.ProductPage.updateProduct(ProductPage.java:78)
-	at com.qa.adminTest.ProductTest.updateProductInategory(ProductTest.java:183)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("input[name=\"products_name[1]\"]")
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("input[name=\"products_name[1]\"]")
-============================================================
-    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\progress.js:88:26)
-    at Frame.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\frames.js:1039:23)
-    at FrameDispatcher.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\frameDispatcher.js:166:30)
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\dispatcher.js:346:46)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 34 more
-]]></failure>
-    <system-out><![CDATA[name of Product: product_71
+  <testcase name="update_Manufacturer" classname="com.qa.adminTest.ManufacturersTest" time="20.487">
+    <system-out><![CDATA[update_Manufacturer started!
+update_Manufacturer passed!
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Manufacturer" classname="com.qa.adminTest.ManufacturersTest" time="26.623">
+    <system-out><![CDATA[delete_Manufacturer started!
+delete_Manufacturer passed!
+]]></system-out>
+  </testcase>
+  <testcase name="create_New_Category" classname="com.qa.adminTest.CategoriesTest" time="4.508">
+    <system-out><![CDATA[create_New_Category started!
+create_New_Category passed!
+]]></system-out>
+  </testcase>
+  <testcase name="update_Category" classname="com.qa.adminTest.CategoriesTest" time="2.671">
+    <system-out><![CDATA[update_Category started!
+update_Category passed!
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Category" classname="com.qa.adminTest.CategoriesTest" time="3.25">
+    <system-out><![CDATA[delete_Category started!
+delete_Category passed!
+]]></system-out>
+  </testcase>
+  <testcase name="add_Subcategory_In_Category" classname="com.qa.adminTest.CategoriesTest" time="6.424">
+    <system-out><![CDATA[add_Subcategory_In_Category started!
+add_Subcategory_In_Category passed!
+]]></system-out>
+  </testcase>
+  <testcase name="update_Subcategory" classname="com.qa.adminTest.CategoriesTest" time="5.195">
+    <system-out><![CDATA[update_Subcategory started!
+update_Subcategory passed!
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Subcategory" classname="com.qa.adminTest.CategoriesTest" time="6.609">
+    <system-out><![CDATA[delete_Subcategory started!
+delete_Subcategory passed!
+]]></system-out>
+  </testcase>
+  <testcase name="add_New_Product" classname="com.qa.adminTest.ProductTest" time="6.91">
+    <system-out><![CDATA[add_New_Product started!
+add_New_Product passed!
+]]></system-out>
+  </testcase>
+  <testcase name="update_Product" classname="com.qa.adminTest.ProductTest" time="4.769">
+    <system-out><![CDATA[update_Product started!
+update_Product passed!
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Product" classname="com.qa.adminTest.ProductTest" time="4.141">
+    <system-out><![CDATA[delete_Product started!
+delete_Product passed!
+]]></system-out>
+  </testcase>
+  <testcase name="add_Product_Under_Catgory" classname="com.qa.adminTest.ProductTest" time="5.426">
+    <system-out><![CDATA[add_Product_Under_Catgory started!
+add_Product_Under_Catgory passed!
+]]></system-out>
+  </testcase>
+  <testcase name="update_Product_In_Category" classname="com.qa.adminTest.ProductTest" time="4.227">
+    <system-out><![CDATA[update_Product_In_Category started!
+update_Product_In_Category passed!
+]]></system-out>
+  </testcase>
+  <testcase name="login_Test1" classname="com.qa.userTest.LoginTest" time="2.693">
+    <system-out><![CDATA[login_Test1 started!
+login_Test1 passed!
+]]></system-out>
+  </testcase>
+  <testcase name="ragister_User" classname="com.qa.userTest.RegisterUser" time="16.314">
+    <system-out><![CDATA[ragister_User started!
+ragister_User passed!
+]]></system-out>
+  </testcase>
+  <testcase name="buy_Product" classname="com.qa.userTest.BuyProduct" time="13.972">
+    <system-out><![CDATA[buy_Product started!
+buy_Product passed!
 ]]></system-out>
   </testcase>
 </testsuite>

@@ -11,7 +11,7 @@
 <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
-<style type="text/css"></style></head><body class="spa -report dark">
+<style type="text/css"></style></head><body class="spa -report standard">
   <div class="app">
     <div class="layout">
 <div class="header navbar">
@@ -32,10 +32,10 @@
 </ul>
 <ul class="nav-right">
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary"></span></a>
+<a href="#"><span class="badge badge-primary">GCR SHOP Automation Test</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 11, 2024 10:21:32 am</span></a>
+<a href="#"><span class="badge badge-primary">Jan 12, 2024 11:59:57 AM</span></a>
 </li>
 </ul>
 </div>
@@ -47,9 +47,9 @@
 <span class="ico"><i class="fa fa-list"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('author-view')">
-<a id="nav-author" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-user"></i></span>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -77,22 +77,22 @@
 </ul>
 </li>
 <li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
-<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">GCRShopTesting</a>
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">CategoriesTest</a><a class="dropdown-item" href="#">ManufacturersTest</a><a class="dropdown-item" href="#">ProductTest</a><a class="dropdown-item" href="#">LoginTest</a><a class="dropdown-item" href="#">AdminLoginTest</a><a class="dropdown-item" href="#">RegisterUser</a><a class="dropdown-item" href="#">GCRShoptestSuite</a><a class="dropdown-item" href="#">BuyProduct</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
-          author="GCRShopTesting"
-          tag=""
+          author=""
+          tag="AdminLoginTest GCRShoptestSuite"
           device="">
           <div class="test-detail">
-            <p class="name">Add new Product</p>
+            <p class="name">login_Test</p>
             <p class="text-sm">
-              <span>10:21:33 am</span> / <span>00:00:10:005</span>
+              <span>12:00:03 PM</span> / <span>00:00:08:143</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,15 +100,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Add new Product</h5>
-<span class='badge badge-success'>01.11.2024 10:21:33 am</span>
-<span class='badge badge-danger'>01.11.2024 10:21:43 am</span>
-<span class='badge badge-default'>00:00:10:005</span>
+<h5 class="test-status text-pass">login_Test</h5>
+<span class='badge badge-success'>01.12.2024 12:00:03 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:00:11 PM</span>
+<span class='badge badge-default'>00:00:08:143</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShopTesting</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AdminLoginTest</span>
+<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-10 m-l-5">Login With Valid Data</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -116,42 +118,991 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:33 am</td>
+        <td>12:00:03 PM</td>
         <td>
           Navigate to application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:34 am</td>
+        <td>12:00:07 PM</td>
+        <td>
+          Enter Admin User Name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:07 PM</td>
+        <td>
+          Enter Admin Password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:07 PM</td>
+        <td>
+          Click on Login Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:11 PM</td>
+        <td>
+          Check Admin is Logged in 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:00:11 PM</td>
+        <td>
+          Admin Login Succesfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="AdminLoginTest GCRShoptestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">login_With_Invalid_Data</p>
+            <p class="text-sm">
+              <span>12:00:11 PM</span> / <span>00:00:02:376</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">login_With_Invalid_Data</h5>
+<span class='badge badge-success'>01.12.2024 12:00:11 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:00:13 PM</span>
+<span class='badge badge-default'>00:00:02:376</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AdminLoginTest</span>
+<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-10 m-l-5">Login With Invalid Data</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:11 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:13 PM</td>
+        <td>
+          Enter Admin User Name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:13 PM</td>
+        <td>
+          Enter Admin Password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:13 PM</td>
+        <td>
+          Click on Login Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:13 PM</td>
+        <td>
+          Validate the error message
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:00:13 PM</td>
+        <td>
+          Admin NOT Logged in with Invalid Username and Password
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="GCRShoptestSuite ManufacturersTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">add_New_Manufacture</p>
+            <p class="text-sm">
+              <span>12:00:15 PM</span> / <span>00:00:15:705</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">add_New_Manufacture</h5>
+<span class='badge badge-success'>01.12.2024 12:00:15 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:00:30 PM</span>
+<span class='badge badge-default'>00:00:15:705</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
+<span class="badge badge-pill badge-default">ManufacturersTest</span></div>
+<div class="m-t-10 m-l-5">Add new Manufacture</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:15 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:17 PM</td>
         <td>
           Login to application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:34 am</td>
+        <td>12:00:18 PM</td>
+        <td>
+          Navigate to manufacturers tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:18 PM</td>
+        <td>
+          Adding new manufacture
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:19 PM</td>
+        <td>
+          Checking added new manufacture in the list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:00:30 PM</td>
+        <td>
+          Added new Manufacture successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="GCRShoptestSuite ManufacturersTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">update_Manufacturer</p>
+            <p class="text-sm">
+              <span>12:00:30 PM</span> / <span>00:00:20:487</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">update_Manufacturer</h5>
+<span class='badge badge-success'>01.12.2024 12:00:30 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:00:51 PM</span>
+<span class='badge badge-default'>00:00:20:487</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
+<span class="badge badge-pill badge-default">ManufacturersTest</span></div>
+<div class="m-t-10 m-l-5">Update Manufacture</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:30 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:31 PM</td>
+        <td>
+          Login to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:32 PM</td>
+        <td>
+          Navigate to manufacturers tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:32 PM</td>
+        <td>
+          Click on manufacturer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:42 PM</td>
+        <td>
+          Update manufacturer name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:44 PM</td>
+        <td>
+          Check updated manufacturer name in the list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:00:51 PM</td>
+        <td>
+          Manufacturer updated successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="GCRShoptestSuite ManufacturersTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">delete_Manufacturer</p>
+            <p class="text-sm">
+              <span>12:00:51 PM</span> / <span>00:00:26:621</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">delete_Manufacturer</h5>
+<span class='badge badge-success'>01.12.2024 12:00:51 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:01:17 PM</span>
+<span class='badge badge-default'>00:00:26:621</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
+<span class="badge badge-pill badge-default">ManufacturersTest</span></div>
+<div class="m-t-10 m-l-5">Delete Manufacture</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:51 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:52 PM</td>
+        <td>
+          Login to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:53 PM</td>
+        <td>
+          Navigating to manufacturers tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:00:53 PM</td>
+        <td>
+          Click on Manufacturer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:07 PM</td>
+        <td>
+          Delete Manufacturer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:07 PM</td>
+        <td>
+          Check Manufacturer is deleted
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:01:17 PM</td>
+        <td>
+          Manufacturer Deleted successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="CategoriesTest GCRShoptestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">create_New_Category</p>
+            <p class="text-sm">
+              <span>12:01:19 PM</span> / <span>00:00:04:509</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">create_New_Category</h5>
+<span class='badge badge-success'>01.12.2024 12:01:19 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:01:23 PM</span>
+<span class='badge badge-default'>00:00:04:509</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
+<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-10 m-l-5">Add new Category</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:19 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:20 PM</td>
+        <td>
+          Login to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:21 PM</td>
+        <td>
+          Navigate to categories tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:22 PM</td>
+        <td>
+          Adding new category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:23 PM</td>
+        <td>
+          Checking added new category in the list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:01:23 PM</td>
+        <td>
+          Added new Cateogry successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="CategoriesTest GCRShoptestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">update_Category</p>
+            <p class="text-sm">
+              <span>12:01:23 PM</span> / <span>00:00:02:668</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">update_Category</h5>
+<span class='badge badge-success'>01.12.2024 12:01:23 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:01:26 PM</span>
+<span class='badge badge-default'>00:00:02:668</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
+<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-10 m-l-5">Update added category</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:23 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:24 PM</td>
+        <td>
+          Login to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:24 PM</td>
+        <td>
+          Navigate to categories tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:25 PM</td>
+        <td>
+          Click on category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:25 PM</td>
+        <td>
+          Update category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:26 PM</td>
+        <td>
+          Check updated category name in the list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:01:26 PM</td>
+        <td>
+          Cateogry updated successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="CategoriesTest GCRShoptestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">delete_Category</p>
+            <p class="text-sm">
+              <span>12:01:26 PM</span> / <span>00:00:03:249</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">delete_Category</h5>
+<span class='badge badge-success'>01.12.2024 12:01:26 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:01:29 PM</span>
+<span class='badge badge-default'>00:00:03:249</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
+<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-10 m-l-5">Delete category</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:26 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:27 PM</td>
+        <td>
+          Login to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:27 PM</td>
+        <td>
+          Navigate to categories tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:27 PM</td>
+        <td>
+          Click on category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:28 PM</td>
+        <td>
+          Delete the category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:29 PM</td>
+        <td>
+          Check Category is deleted
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:01:29 PM</td>
+        <td>
+          Category Deleted successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="CategoriesTest GCRShoptestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">add_Subcategory_In_Category</p>
+            <p class="text-sm">
+              <span>12:01:29 PM</span> / <span>00:00:06:423</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">add_Subcategory_In_Category</h5>
+<span class='badge badge-success'>01.12.2024 12:01:29 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:01:36 PM</span>
+<span class='badge badge-default'>00:00:06:423</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
+<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-10 m-l-5">Add new subcategory in category</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:29 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:30 PM</td>
+        <td>
+          Login to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:31 PM</td>
+        <td>
+          Navigate to Categories tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:32 PM</td>
+        <td>
+          Adding new Category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:33 PM</td>
+        <td>
+          Checking added new Category in the list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:33 PM</td>
+        <td>
+          Navigate to Category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:34 PM</td>
+        <td>
+          Adding new Subcategory in Category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:36 PM</td>
+        <td>
+          Checking added new Subcategory in the Category list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:01:36 PM</td>
+        <td>
+          Added new Subcateogry in the Category successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="CategoriesTest GCRShoptestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">update_Subcategory</p>
+            <p class="text-sm">
+              <span>12:01:36 PM</span> / <span>00:00:05:194</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">update_Subcategory</h5>
+<span class='badge badge-success'>01.12.2024 12:01:36 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:01:41 PM</span>
+<span class='badge badge-default'>00:00:05:194</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
+<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-10 m-l-5">Update subcategory</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:36 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:36 PM</td>
+        <td>
+          Login to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:38 PM</td>
+        <td>
+          Navigate to Categories tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:38 PM</td>
+        <td>
+          Navigate to Category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:39 PM</td>
+        <td>
+          Update Subcategory
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:41 PM</td>
+        <td>
+          Check updated Subcategory in the list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:01:41 PM</td>
+        <td>
+          Updated Subcategory in the Category successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="CategoriesTest GCRShoptestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">delete_Subcategory</p>
+            <p class="text-sm">
+              <span>12:01:41 PM</span> / <span>00:00:06:608</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">delete_Subcategory</h5>
+<span class='badge badge-success'>01.12.2024 12:01:41 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:01:47 PM</span>
+<span class='badge badge-default'>00:00:06:608</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
+<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-10 m-l-5">Delete Category and Subcategory</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:41 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:42 PM</td>
+        <td>
+          Login to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:42 PM</td>
+        <td>
+          Navigate to Categories tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:42 PM</td>
+        <td>
+          Navigate to Subcategory
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:44 PM</td>
+        <td>
+          Delete the Subcategory
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:45 PM</td>
+        <td>
+          Check Subategory is deleted
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:45 PM</td>
+        <td>
+          Navigate to Category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:46 PM</td>
+        <td>
+          Click on Category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:46 PM</td>
+        <td>
+          Delete the Category
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:47 PM</td>
+        <td>
+          Check Category is deleted
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:01:47 PM</td>
+        <td>
+          Category and Subcategory Deleted successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag="GCRShoptestSuite ProductTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">add_New_Product</p>
+            <p class="text-sm">
+              <span>12:01:49 PM</span> / <span>00:00:06:910</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">add_New_Product</h5>
+<span class='badge badge-success'>01.12.2024 12:01:49 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:01:55 PM</span>
+<span class='badge badge-default'>00:00:06:910</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
+<span class="badge badge-pill badge-default">ProductTest</span></div>
+<div class="m-t-10 m-l-5">Add new Product</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:49 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:52 PM</td>
+        <td>
+          Login to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:01:52 PM</td>
         <td>
           Navigate to Products tab
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:37 am</td>
+        <td>12:01:53 PM</td>
         <td>
           Add new Product 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:43 am</td>
+        <td>12:01:55 PM</td>
         <td>
           Check added product in the list
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:21:43 am</td>
+        <td>12:01:55 PM</td>
         <td>
           Added new Product successfully
         </td>
@@ -161,14 +1112,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
-          author="GCRShopTesting"
-          tag=""
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag="GCRShoptestSuite ProductTest"
           device="">
           <div class="test-detail">
-            <p class="name">Update Product</p>
+            <p class="name">update_Product</p>
             <p class="text-sm">
-              <span>10:21:43 am</span> / <span>00:00:04:184</span>
+              <span>12:01:55 PM</span> / <span>00:00:04:769</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -176,15 +1127,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Update Product</h5>
-<span class='badge badge-success'>01.11.2024 10:21:43 am</span>
-<span class='badge badge-danger'>01.11.2024 10:21:47 am</span>
-<span class='badge badge-default'>00:00:04:184</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<h5 class="test-status text-pass">update_Product</h5>
+<span class='badge badge-success'>01.12.2024 12:01:55 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:02:00 PM</span>
+<span class='badge badge-default'>00:00:04:769</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShopTesting</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
+<span class="badge badge-pill badge-default">ProductTest</span></div>
+<div class="m-t-10 m-l-5">Update Product</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -192,49 +1145,49 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:43 am</td>
+        <td>12:01:55 PM</td>
         <td>
           Navigate to application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:43 am</td>
+        <td>12:01:56 PM</td>
         <td>
           Login to application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:44 am</td>
+        <td>12:01:57 PM</td>
         <td>
           Navigate to Products tab
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:44 am</td>
+        <td>12:01:58 PM</td>
         <td>
           Click on Product
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:45 am</td>
+        <td>12:01:59 PM</td>
         <td>
           Update the Product
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:46 am</td>
+        <td>12:02:00 PM</td>
         <td>
           Check updated Product in the list
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:21:47 am</td>
+        <td>12:02:00 PM</td>
         <td>
           Product updated successfully
         </td>
@@ -244,14 +1197,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author="GCRShopTesting"
-          tag=""
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag="GCRShoptestSuite ProductTest"
           device="">
           <div class="test-detail">
-            <p class="name">Delete Product</p>
+            <p class="name">delete_Product</p>
             <p class="text-sm">
-              <span>10:21:47 am</span> / <span>00:00:04:191</span>
+              <span>12:02:00 PM</span> / <span>00:00:04:140</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,15 +1212,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Delete Product</h5>
-<span class='badge badge-success'>01.11.2024 10:21:47 am</span>
-<span class='badge badge-danger'>01.11.2024 10:21:51 am</span>
-<span class='badge badge-default'>00:00:04:191</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<h5 class="test-status text-pass">delete_Product</h5>
+<span class='badge badge-success'>01.12.2024 12:02:00 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:02:04 PM</span>
+<span class='badge badge-default'>00:00:04:140</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShopTesting</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
+<span class="badge badge-pill badge-default">ProductTest</span></div>
+<div class="m-t-10 m-l-5">Delete Product</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -275,49 +1230,49 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:47 am</td>
+        <td>12:02:00 PM</td>
         <td>
           Navigate to application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:47 am</td>
+        <td>12:02:01 PM</td>
         <td>
           Login to application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:48 am</td>
+        <td>12:02:01 PM</td>
         <td>
           Navigate to Products tab
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:48 am</td>
+        <td>12:02:02 PM</td>
         <td>
           Click on Product
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:49 am</td>
+        <td>12:02:03 PM</td>
         <td>
           Delete the Product
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:50 am</td>
+        <td>12:02:04 PM</td>
         <td>
           Check is Product Delete
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:21:51 am</td>
+        <td>12:02:04 PM</td>
         <td>
           Product Deleted successfully
         </td>
@@ -327,14 +1282,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author="GCRShopTesting"
-          tag=""
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag="GCRShoptestSuite ProductTest"
           device="">
           <div class="test-detail">
-            <p class="name">Add new Product in Category</p>
+            <p class="name">add_Product_Under_Catgory</p>
             <p class="text-sm">
-              <span>10:21:51 am</span> / <span>00:00:06:565</span>
+              <span>12:02:04 PM</span> / <span>00:00:05:425</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -342,15 +1297,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Add new Product in Category</h5>
-<span class='badge badge-success'>01.11.2024 10:21:51 am</span>
-<span class='badge badge-danger'>01.11.2024 10:21:58 am</span>
-<span class='badge badge-default'>00:00:06:565</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<h5 class="test-status text-pass">add_Product_Under_Catgory</h5>
+<span class='badge badge-success'>01.12.2024 12:02:04 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:02:10 PM</span>
+<span class='badge badge-default'>00:00:05:425</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShopTesting</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
+<span class="badge badge-pill badge-default">ProductTest</span></div>
+<div class="m-t-10 m-l-5">Add new Product in Category</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -358,56 +1315,56 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:51 am</td>
+        <td>12:02:04 PM</td>
         <td>
           Navigate to application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:51 am</td>
+        <td>12:02:05 PM</td>
         <td>
           Login to application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:52 am</td>
+        <td>12:02:06 PM</td>
         <td>
           Navigate to Products tab
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:53 am</td>
+        <td>12:02:06 PM</td>
         <td>
           Adding new Category
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:54 am</td>
+        <td>12:02:07 PM</td>
         <td>
           Navigate to Category
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:56 am</td>
+        <td>12:02:08 PM</td>
         <td>
           Add new Product 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:58 am</td>
+        <td>12:02:10 PM</td>
         <td>
           Check added product in the list
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:21:58 am</td>
+        <td>12:02:10 PM</td>
         <td>
           Product Added in Category successfully
         </td>
@@ -417,14 +1374,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="5"
-          author="GCRShopTesting"
-          tag=""
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag="GCRShoptestSuite ProductTest"
           device="">
           <div class="test-detail">
-            <p class="name">Update Product</p>
+            <p class="name">update_Product_In_Category</p>
             <p class="text-sm">
-              <span>10:21:58 am</span> / <span>00:00:10:098</span>
+              <span>12:02:10 PM</span> / <span>00:00:04:227</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -432,15 +1389,17 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Update Product</h5>
-<span class='badge badge-success'>01.11.2024 10:21:58 am</span>
-<span class='badge badge-danger'>01.11.2024 10:22:08 am</span>
-<span class='badge badge-default'>00:00:10:098</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<h5 class="test-status text-pass">update_Product_In_Category</h5>
+<span class='badge badge-success'>01.12.2024 12:02:10 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:02:14 PM</span>
+<span class='badge badge-default'>00:00:04:227</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShopTesting</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
+<span class="badge badge-pill badge-default">ProductTest</span></div>
+<div class="m-t-10 m-l-5">Update Product</div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -448,58 +1407,425 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:58 am</td>
+        <td>12:02:10 PM</td>
         <td>
           Navigate to application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:58 am</td>
+        <td>12:02:10 PM</td>
         <td>
           Login to application
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:59 am</td>
+        <td>12:02:11 PM</td>
         <td>
           Navigate to Products tab
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:21:59 am</td>
+        <td>12:02:11 PM</td>
         <td>
           Navigate to Category
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:22:00 am</td>
+        <td>12:02:12 PM</td>
         <td>
           Click on Product
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:22:01 am</td>
+        <td>12:02:12 PM</td>
         <td>
           Update the Product
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>10:22:07 am</td>
+        <td>12:02:13 PM</td>
         <td>
           Check updated Product in the list
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:22:08 am</td>
+        <td>12:02:14 PM</td>
         <td>
           Product updated in category successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="LoginTest GCRShoptestSuite"
+          device="">
+          <div class="test-detail">
+            <p class="name">login_Test1</p>
+            <p class="text-sm">
+              <span>12:02:15 PM</span> / <span>00:00:02:693</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">login_Test1</h5>
+<span class='badge badge-success'>01.12.2024 12:02:15 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:02:18 PM</span>
+<span class='badge badge-default'>00:00:02:693</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">LoginTest</span>
+<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-10 m-l-5">Login with valid Username and Password</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:15 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:17 PM</td>
+        <td>
+          Navigate to My Account
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:18 PM</td>
+        <td>
+          Enter Valid E-Mail
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:18 PM</td>
+        <td>
+          Enter Valid Password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:18 PM</td>
+        <td>
+          Click on Sign In
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:18 PM</td>
+        <td>
+          Verify User is Logged in
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:02:18 PM</td>
+        <td>
+          User Logged in Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="GCRShoptestSuite RegisterUser"
+          device="">
+          <div class="test-detail">
+            <p class="name">ragister_User</p>
+            <p class="text-sm">
+              <span>12:02:19 PM</span> / <span>00:00:16:313</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ragister_User</h5>
+<span class='badge badge-success'>01.12.2024 12:02:19 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:02:36 PM</span>
+<span class='badge badge-default'>00:00:16:313</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
+<span class="badge badge-pill badge-default">RegisterUser</span></div>
+<div class="m-t-10 m-l-5">New user Registration</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:19 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:21 PM</td>
+        <td>
+          Navigate to My Account
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Navigate to Registration
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Select Gender
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter First Name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter Last Name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter DOB
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter Email
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter Street Address
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter Suburb
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter Post Code
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter City
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter State
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Select Country
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter Telephone
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter Password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Enter Confirm Password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:22 PM</td>
+        <td>
+          Click on Continue Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:36 PM</td>
+        <td>
+          Check Register Message
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:02:36 PM</td>
+        <td>
+          New User Register Successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="GCRShoptestSuite BuyProduct"
+          device="">
+          <div class="test-detail">
+            <p class="name">buy_Product</p>
+            <p class="text-sm">
+              <span>12:02:37 PM</span> / <span>00:00:13:972</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">buy_Product</h5>
+<span class='badge badge-success'>01.12.2024 12:02:37 PM</span>
+<span class='badge badge-danger'>01.12.2024 12:02:51 PM</span>
+<span class='badge badge-default'>00:00:13:972</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
+<span class="badge badge-pill badge-default">BuyProduct</span></div>
+<div class="m-t-10 m-l-5">Place the order</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:37 PM</td>
+        <td>
+          Navigate to application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:39 PM</td>
+        <td>
+          Search the Product
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:39 PM</td>
+        <td>
+          Click on Product
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:39 PM</td>
+        <td>
+          Add Product to Cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:40 PM</td>
+        <td>
+          Checkout the Product
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:40 PM</td>
+        <td>
+          Login the User
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:41 PM</td>
+        <td>
+          Click on Continue
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:42 PM</td>
+        <td>
+          Confirm the order
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:02:51 PM</td>
+        <td>
+          Verify order Successful Message
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:02:51 PM</td>
+        <td>
+          Order placed Successfully
         </td>
       </tr>
   </tbody>
@@ -516,25 +1842,140 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view author-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">8</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">CategoriesTest</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>CategoriesTest</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>create_New_Category</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>update_Category</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>delete_Category</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>add_Subcategory_In_Category</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>update_Subcategory</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>delete_Subcategory</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">ManufacturersTest</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>ManufacturersTest</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>add_New_Manufacture</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>update_Manufacturer</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>delete_Manufacturer</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
 <span class='badge log pass-bg'>5</span>
 </span>
-<p class="name">GCRShopTesting</p>
+<p class="name">ProductTest</p>
 <p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>GCRShopTesting</h4>
+<h4>ProductTest</h4>
 <span status="pass" class='badge log pass-bg'>5 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -548,37 +1989,335 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:21:33 am</td>
+<td>12:01:49 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>Add new Product</a>
+<a href="#" class="linked" test-id='12' id='12'>add_New_Product</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:21:43 am</td>
+<td>12:01:55 PM</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>Update Product</a>
+<a href="#" class="linked" test-id='13' id='13'>update_Product</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:21:47 am</td>
+<td>12:02:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>Delete Product</a>
+<a href="#" class="linked" test-id='14' id='14'>delete_Product</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:21:51 am</td>
+<td>12:02:04 PM</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>Add new Product in Category</a>
+<a href="#" class="linked" test-id='15' id='15'>add_Product_Under_Catgory</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:21:58 am</td>
+<td>12:02:10 PM</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>Update Product</a>
+<a href="#" class="linked" test-id='16' id='16'>update_Product_In_Category</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">LoginTest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>LoginTest</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:02:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>login_Test1</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">AdminLoginTest</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>AdminLoginTest</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>login_Test</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>login_With_Invalid_Data</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">RegisterUser</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>RegisterUser</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:02:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>ragister_User</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>19</span>
+</span>
+<p class="name">GCRShoptestSuite</p>
+<p class="duration text-sm">19 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>GCRShoptestSuite</h4>
+<span status="pass" class='badge log pass-bg'>19 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>login_Test</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>login_With_Invalid_Data</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>add_New_Manufacture</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>update_Manufacturer</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>delete_Manufacturer</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>create_New_Category</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>update_Category</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>delete_Category</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>add_Subcategory_In_Category</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>update_Subcategory</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>delete_Subcategory</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>add_New_Product</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>update_Product</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:02:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>delete_Product</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:02:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>add_Product_Under_Catgory</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:02:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>update_Product_In_Category</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:02:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>login_Test1</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:02:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>ragister_User</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:02:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>buy_Product</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">BuyProduct</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>BuyProduct</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:02:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>buy_Product</a>
 </td>
 </tr>
 </tbody>
@@ -598,19 +2337,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 11, 2024 10:21:32 am</h3>
+<h3>Jan 12, 2024 11:59:57 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 11, 2024 10:22:08 am</h3>
+<h3>Jan 12, 2024 12:02:51 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>5</h3>
+<h3>19</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -633,7 +2372,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>5</b> tests passed
+<b>19</b> tests passed
 </small>
 </div>
 <div>
@@ -655,10 +2394,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='13%'><b>5</b> events passed</small></div>
+<div><small data-tooltip='12%'><b>19</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>31</b> others
+<b data-tooltip='%'>133</b> others
 </small>
 </div>
 </div>
@@ -674,19 +2413,74 @@
 </div></div>
 <script>
 var timeline = {
-"Add new Product":10.005,"Update Product":4.184,"Delete Product":4.191,"Add new Product in Category":6.565,"Update Product":10.098
+"login_Test":8.143,"login_With_Invalid_Data":2.376,"add_New_Manufacture":15.705,"update_Manufacturer":20.487,"delete_Manufacturer":26.621,"create_New_Category":4.509,"update_Category":2.668,"delete_Category":3.249,"add_Subcategory_In_Category":6.423,"update_Subcategory":5.194,"delete_Subcategory":6.608,"add_New_Product":6.91,"update_Product":4.769,"delete_Product":4.14,"add_Product_Under_Catgory":5.425,"update_Product_In_Category":4.227,"login_Test1":2.693,"ragister_User":16.313,"buy_Product":13.972
 };
 </script>
 <div class="row">
-<div class="col-lg-6 col-md-12 author-container">
+<div class="col-lg-6 col-md-12 category-container">
 <div class="card">
-<div class="card-header"><p>Author</p></div>
+<div class="card-header"><p>Tags</p></div>
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
-<tbody>
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>GCRShopTesting</td>
+<td>CategoriesTest</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>ManufacturersTest</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>ProductTest</td>
 <td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>LoginTest</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>AdminLoginTest</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>RegisterUser</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>GCRShoptestSuite</td>
+<td>19</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>BuyProduct</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -703,12 +2497,16 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
 <tr>
+<td>System</td>
+<td>Windows</td>
+</tr>
+<tr>
 <td>Operating System: </td>
 <td>Windows 11</td>
 </tr>
 <tr>
 <td>Java Version: </td>
-<td>17.0.9</td>
+<td>11.0.19</td>
 </tr>
 </tbody>
 </table></div>
@@ -719,7 +2517,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 5,
+passParent: 19,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
@@ -736,11 +2534,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 5,
+passEvents: 19,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 31
+infoEvents: 133
 };
 </script>        </div>
       </div>

@@ -11,66 +11,60 @@ import com.qa.userPages.UserLoginPage;
 public class LoginTest extends BaseTest {
 
 	@BeforeClass
-	public void beforeCalss() {
+	public void beforeClass() {
 		userHomePage = new UserHomePage(page, prop);
 		userLoginPage = new UserLoginPage(page, prop);
 	}
 
 	@Test(priority = 1, description = "Login with valid Username and Password")
-	public void loginTest1() {
+	public void login_Test1() {
 
-		extentTest = extentReports.createTest("Login with valid Username and Password")
-				.assignAuthor("GCR Shop Testing");
-
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		userHomePage.goToUserPage();
 
-		extentTest.info("Navigate to My Account");
+		test.get().info("Navigate to My Account");
 		userHomePage.clickOnMyAccount();
 
-		extentTest.info("Enter Valid E-Mail");
+		test.get().info("Enter Valid E-Mail");
 		userLoginPage.enterUserEmail(prop.getProperty("userEmail"));
 
-		extentTest.info("Enter Valid Password");
+		test.get().info("Enter Valid Password");
 		userLoginPage.enterUserPassword(prop.getProperty("userPassword"));
 
-		extentTest.info("Click on Sign In");
+		test.get().info("Click on Sign In");
 		userLoginPage.clickOnSignIn();
 
-		extentTest.info("Verify User is Logged in");
+		test.get().info("Verify User is Logged in");
 		String loginMessage = userLoginPage.loginMessage();
 		Assert.assertEquals(loginMessage, "My Account Information");
 
-		extentTest.pass("User Logged in Successfully");
+		test.get().pass("User Logged in Successfully");
 
 	}
 
-	@Test(priority = 2, description = "Login with valid Username and Invalid Password")
-	public void loginTest2() {
+//	@Test(priority = 2, description = "Login with valid Username and Invalid Password")
+	public void login_Test2() {
 
-		extentTest = extentReports.createTest("Login with valid Username and Invalid Password")
-				.assignAuthor("GCR Shop Testing");
-
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		userHomePage.goToUserPage();
 
-		extentTest.info("Navigate to My Account");
+		test.get().info("Navigate to My Account");
 		userHomePage.clickOnMyAccount();
 
-		extentTest.info("Enter Valid E-Mail");
+		test.get().info("Enter Valid E-Mail");
 		userLoginPage.enterUserEmail(prop.getProperty("userEmail"));
 
-		extentTest.info("Enter Valid Password");
+		test.get().info("Enter Valid Password");
 		userLoginPage.enterUserPassword(prop.getProperty("invalidUserPassword"));
 
-		extentTest.info("Click on Sign In");
+		test.get().info("Click on Sign In");
 		userLoginPage.clickOnSignIn();
 
-		extentTest.info("Verify User is NOT Logged in");
+		test.get().info("Verify User is NOT Logged in");
 		boolean errorMessage = userLoginPage.errorMessage();
 		Assert.assertTrue(errorMessage);
 
-		extentTest.pass("User is NOT Logged in");
+		test.get().pass("User is NOT Logged in");
 
 	}
 

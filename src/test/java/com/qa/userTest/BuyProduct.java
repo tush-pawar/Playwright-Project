@@ -11,47 +11,44 @@ import com.qa.userPages.UserLoginPage;
 public class BuyProduct extends BaseTest {
 
 	@BeforeClass
-	public void beforeCalss() {
+	public void beforeClass() {
 		userHomePage = new UserHomePage(page, prop);
 		userLoginPage = new UserLoginPage(page, prop);
 	}
 
 	@Test(priority = 1, description = "Place the order")
-	public void buyProduct() {
+	public void buy_Product() {
 
-		extentTest = extentReports.createTest("Place the order").assignAuthor("GCR Shop Testing");
-
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		userHomePage.goToUserPage();
 
-		extentTest.info("Search the Product");
+		test.get().info("Search the Product");
 		userHomePage.searchProduct(prop.getProperty("productName").trim());
 
-		extentTest.info("Click on Product");
+		test.get().info("Click on Product");
 		userHomePage.clickOnProduct(prop.getProperty("productName").trim());
 
-		extentTest.info("Add Product to Cart");
+		test.get().info("Add Product to Cart");
 		userHomePage.addToCart();
 
-		extentTest.info("Checkout the Product");
+		test.get().info("Checkout the Product");
 		userHomePage.clickOnCheckout();
 
-		extentTest.info("Login the User");
+		test.get().info("Login the User");
 		userLoginPage.loginUser();
 
-		extentTest.info("Click on Continue");
+		test.get().info("Click on Continue");
 		userHomePage.clickOnContinue();
 
-		extentTest.info("Confirm the order");
+		test.get().info("Confirm the order");
 		userHomePage.clickOnConfirmOrder();
 
-		extentTest.info("Verify order Successful Message");
+		test.get().info("Verify order Successful Message");
 		boolean verifyThanksMessageVisible = userHomePage.verifyThanksMessageVisible();
 		Assert.assertTrue(verifyThanksMessageVisible);
 
-		extentTest.info("Order placed Successfully");
+		test.get().pass("Order placed Successfully");
 
 	}
-	
 
 }

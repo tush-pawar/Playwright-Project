@@ -20,81 +20,79 @@ public class RegisterUser extends BaseTest {
 	String email;
 
 	@BeforeClass
-	public void beforeCalss() {
+	public void beforeClass() {
 		userHomePage = new UserHomePage(page, prop);
 		userLoginPage = new UserLoginPage(page, prop);
 		userRegisterPage = new UserRegisterPage(page);
 		dd = "" + 25;
-		mm = "" +10;
-		yyyy = "" +1999;
+		mm = "" + 10;
+		yyyy = "" + 1999;
 		dob = mm + "/" + dd + "/" + yyyy;
-		email="test"+new Random().nextInt(999)+"@test.com";
+		email = "test" + new Random().nextInt(999) + "@test.com";
 	}
 
 	@Test(priority = 1, description = "New user Registration")
-	public void ragisterUser() {
+	public void ragister_User() {
 
-		extentTest = extentReports.createTest("New user Registration").assignAuthor("GCR Shop Testing");
-
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		userHomePage.goToUserPage();
 
-		extentTest.info("Navigate to My Account");
+		test.get().info("Navigate to My Account");
 		userHomePage.clickOnMyAccount();
 
-		extentTest.info("Navigate to Registration");
+		test.get().info("Navigate to Registration");
 		userRegisterPage.clickOnContinueButton();
 
-		extentTest.info("Select Gender");
+		test.get().info("Select Gender");
 		userRegisterPage.selectGender(prop.getProperty("gender").trim());
 
-		extentTest.info("Enter First Name");
+		test.get().info("Enter First Name");
 		userRegisterPage.enterFirstName(prop.getProperty("firstName").trim());
 
-		extentTest.info("Enter Last Name");
+		test.get().info("Enter Last Name");
 		userRegisterPage.enterLastName(prop.getProperty("lastname").trim());
 
-		extentTest.info("Enter DOB");
+		test.get().info("Enter DOB");
 		userRegisterPage.enterDOB(dob);
 
-		extentTest.info("Enter Email");
+		test.get().info("Enter Email");
 		userRegisterPage.enterEmail(email);
 
-		extentTest.info("Enter Street Address");
+		test.get().info("Enter Street Address");
 		userRegisterPage.enterStreetAddress(prop.getProperty("streetAdderss").trim());
 
-		extentTest.info("Enter Suburb");
+		test.get().info("Enter Suburb");
 		userRegisterPage.enterSuburb(prop.getProperty("suburb").trim());
 
-		extentTest.info("Enter Post Code");
+		test.get().info("Enter Post Code");
 		userRegisterPage.enterPostCode(prop.getProperty("postCode").trim());
-		
-		extentTest.info("Enter City");
+
+		test.get().info("Enter City");
 		userRegisterPage.enterCity(prop.getProperty("city").trim());
 
-		extentTest.info("Enter State");
+		test.get().info("Enter State");
 		userRegisterPage.enterState(prop.getProperty("state").trim());
 
-		extentTest.info("Select Country");
+		test.get().info("Select Country");
 		userRegisterPage.selectCountry(prop.getProperty("Country").trim());
 
-		extentTest.info("Enter Telephone");
+		test.get().info("Enter Telephone");
 		userRegisterPage.enterTelephone(prop.getProperty("telephone").trim());
 
-		extentTest.info("Enter Password");
+		test.get().info("Enter Password");
 		userRegisterPage.enterPassword(prop.getProperty("newPassword").trim());
 
-		extentTest.info("Enter Confirm Password");
+		test.get().info("Enter Confirm Password");
 		userRegisterPage.enterConfirmPassword(prop.getProperty("newPassword").trim());
 
-		extentTest.info("Click on Continue Button");
+		test.get().info("Click on Continue Button");
 		userRegisterPage.clickOnContinueButton();
 
-		extentTest.info("Check Register Message");
+		test.get().info("Check Register Message");
 		String accountCreatedMessage = userRegisterPage.accountCreatedMessage();
 		Assert.assertEquals(accountCreatedMessage, "Your Account Has Been Created!");
 
-		extentTest.pass("New User Register Successfully");
+		test.get().pass("New User Register Successfully");
 
 	}
 

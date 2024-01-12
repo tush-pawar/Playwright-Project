@@ -1,134 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="13" failed="3" skipped="0">
+<testng-results ignored="6" total="25" passed="19" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-10T19:56:53 IST" name="GCR Shop Admin test Suite" finished-at="2024-01-10T19:59:47 IST" duration-ms="174885">
+  <suite started-at="2024-01-12T11:59:57 IST" name="GCR Shop test Suite" finished-at="2024-01-12T12:02:51 IST" duration-ms="173682">
     <groups>
     </groups>
-    <test started-at="2024-01-10T19:56:53 IST" name="GCR Shop Admin Login Test_chrome" finished-at="2024-01-10T19:57:04 IST" duration-ms="11647">
-      <class name="com.qa.adminTest.AdminLoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.adminTest.AdminLoginTest@66f57048]" started-at="2024-01-10T19:56:53 IST" name="setup" finished-at="2024-01-10T19:56:59 IST" duration-ms="6733" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chromium]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.adminTest.AdminLoginTest@66f57048]" started-at="2024-01-10T19:56:59 IST" name="beforeClass" finished-at="2024-01-10T19:56:59 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="loginTest()[pri:1, instance:com.qa.adminTest.AdminLoginTest@66f57048]" started-at="2024-01-10T19:56:59 IST" name="loginTest" description="Login With Valid Data" finished-at="2024-01-10T19:57:03 IST" duration-ms="3330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.AdminLoginTest@66f57048]" started-at="2024-01-10T19:57:03 IST" name="tearDown" finished-at="2024-01-10T19:57:03 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=AdminLoginTest.loginTest()[pri:1, instance:com.qa.adminTest.AdminLoginTest@66f57048] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="loginWithInvalidData()[pri:2, instance:com.qa.adminTest.AdminLoginTest@66f57048]" started-at="2024-01-10T19:57:03 IST" name="loginWithInvalidData" description="Login With Invalid Data" finished-at="2024-01-10T19:57:04 IST" duration-ms="1263" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidData -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.AdminLoginTest@66f57048]" started-at="2024-01-10T19:57:04 IST" name="tearDown" finished-at="2024-01-10T19:57:04 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithInvalidData status=SUCCESS method=AdminLoginTest.loginWithInvalidData()[pri:2, instance:com.qa.adminTest.AdminLoginTest@66f57048] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.qa.adminTest.AdminLoginTest@66f57048]" started-at="2024-01-10T19:57:04 IST" name="afterTest" finished-at="2024-01-10T19:57:04 IST" duration-ms="282" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.qa.adminTest.AdminLoginTest -->
-    </test> <!-- GCR Shop Admin Login Test_chrome -->
-    <test started-at="2024-01-10T19:57:04 IST" name="GCR Shop Manufacturers Test_chrome" finished-at="2024-01-10T19:57:56 IST" duration-ms="51713">
-      <class name="com.qa.adminTest.ManufacturersTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.adminTest.ManufacturersTest@70e9c95d]" started-at="2024-01-10T19:57:04 IST" name="setup" finished-at="2024-01-10T19:57:06 IST" duration-ms="1299" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chromium]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeCalss()[pri:0, instance:com.qa.adminTest.ManufacturersTest@70e9c95d]" started-at="2024-01-10T19:57:06 IST" name="beforeCalss" finished-at="2024-01-10T19:57:06 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeCalss -->
-        <test-method signature="addNewManufacture()[pri:1, instance:com.qa.adminTest.ManufacturersTest@70e9c95d]" started-at="2024-01-10T19:57:06 IST" name="addNewManufacture" description="Add new Manufacture" finished-at="2024-01-10T19:57:16 IST" duration-ms="10888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewManufacture -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.ManufacturersTest@70e9c95d]" started-at="2024-01-10T19:57:16 IST" name="tearDown" finished-at="2024-01-10T19:57:16 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addNewManufacture status=SUCCESS method=ManufacturersTest.addNewManufacture()[pri:1, instance:com.qa.adminTest.ManufacturersTest@70e9c95d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="updateManufacturer()[pri:2, instance:com.qa.adminTest.ManufacturersTest@70e9c95d]" started-at="2024-01-10T19:57:16 IST" name="updateManufacturer" description="Update Manufacture" finished-at="2024-01-10T19:57:35 IST" duration-ms="19036" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateManufacturer -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.ManufacturersTest@70e9c95d]" started-at="2024-01-10T19:57:35 IST" name="tearDown" finished-at="2024-01-10T19:57:35 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=updateManufacturer status=SUCCESS method=ManufacturersTest.updateManufacturer()[pri:2, instance:com.qa.adminTest.ManufacturersTest@70e9c95d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="deleteManufacturer()[pri:3, instance:com.qa.adminTest.ManufacturersTest@70e9c95d]" started-at="2024-01-10T19:57:35 IST" name="deleteManufacturer" description="Delete Manufacture" finished-at="2024-01-10T19:57:56 IST" duration-ms="20144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteManufacturer -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.ManufacturersTest@70e9c95d]" started-at="2024-01-10T19:57:56 IST" name="tearDown" finished-at="2024-01-10T19:57:56 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteManufacturer status=SUCCESS method=ManufacturersTest.deleteManufacturer()[pri:3, instance:com.qa.adminTest.ManufacturersTest@70e9c95d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.qa.adminTest.ManufacturersTest@70e9c95d]" started-at="2024-01-10T19:57:56 IST" name="afterTest" finished-at="2024-01-10T19:57:56 IST" duration-ms="335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.qa.adminTest.ManufacturersTest -->
-    </test> <!-- GCR Shop Manufacturers Test_chrome -->
-    <test started-at="2024-01-10T19:57:56 IST" name="GCR Shop Categories Test_chrome" finished-at="2024-01-10T19:58:33 IST" duration-ms="36792">
+    <test started-at="2024-01-12T11:59:57 IST" name="GCR Shop Admin Test_chrome" finished-at="2024-01-12T12:02:51 IST" duration-ms="173682">
       <class name="com.qa.adminTest.CategoriesTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:57:56 IST" name="setup" finished-at="2024-01-10T19:57:57 IST" duration-ms="1326" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.adminTest.CategoriesTest@5505ae1a]" started-at="2024-01-12T12:01:17 IST" name="setup" finished-at="2024-01-12T12:01:19 IST" duration-ms="1314" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,371 +18,193 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeCalss()[pri:0, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:57:57 IST" name="beforeCalss" finished-at="2024-01-10T19:57:57 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeCalss -->
-        <test-method signature="createNewCategory()[pri:1, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:57:57 IST" name="createNewCategory" description="Add new Category" finished-at="2024-01-10T19:58:05 IST" duration-ms="7427" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewCategory -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:05 IST" name="tearDown" finished-at="2024-01-10T19:58:05 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createNewCategory status=SUCCESS method=CategoriesTest.createNewCategory()[pri:1, instance:com.qa.adminTest.CategoriesTest@13e344d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="updateCategory()[pri:2, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:05 IST" name="updateCategory" description="Update added category" finished-at="2024-01-10T19:58:09 IST" duration-ms="4312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateCategory -->
-        <test-method signature="deleteCategory()[pri:3, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:09 IST" name="deleteCategory" description="Delete category" finished-at="2024-01-10T19:58:13 IST" duration-ms="3997" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteCategory -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:09 IST" name="tearDown" finished-at="2024-01-10T19:58:09 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=updateCategory status=SUCCESS method=CategoriesTest.updateCategory()[pri:2, instance:com.qa.adminTest.CategoriesTest@13e344d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:13 IST" name="tearDown" finished-at="2024-01-10T19:58:13 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteCategory status=SUCCESS method=CategoriesTest.deleteCategory()[pri:3, instance:com.qa.adminTest.CategoriesTest@13e344d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="addSubcategoryInCategory()[pri:4, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:13 IST" name="addSubcategoryInCategory" description="Add new subcategory in category" finished-at="2024-01-10T19:58:20 IST" duration-ms="6866" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addSubcategoryInCategory -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:20 IST" name="tearDown" finished-at="2024-01-10T19:58:20 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addSubcategoryInCategory status=SUCCESS method=CategoriesTest.addSubcategoryInCategory()[pri:4, instance:com.qa.adminTest.CategoriesTest@13e344d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="updateSubcategory()[pri:5, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:20 IST" name="updateSubcategory" description="Update subcategory" finished-at="2024-01-10T19:58:24 IST" duration-ms="4503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateSubcategory -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:24 IST" name="tearDown" finished-at="2024-01-10T19:58:24 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=updateSubcategory status=SUCCESS method=CategoriesTest.updateSubcategory()[pri:5, instance:com.qa.adminTest.CategoriesTest@13e344d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="deleteSubcategory()[pri:6, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:24 IST" name="deleteSubcategory" description="Delete Category and Subcategory" finished-at="2024-01-10T19:58:32 IST" duration-ms="7572" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.qa.adminTest.CategoriesTest.deleteSubcategory(CategoriesTest.java:214)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSubcategory -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:32 IST" name="tearDown" finished-at="2024-01-10T19:58:32 IST" duration-ms="467" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteSubcategory status=FAILURE method=CategoriesTest.deleteSubcategory()[pri:6, instance:com.qa.adminTest.CategoriesTest@13e344d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.qa.adminTest.CategoriesTest@13e344d]" started-at="2024-01-10T19:58:32 IST" name="afterTest" finished-at="2024-01-10T19:58:33 IST" duration-ms="299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.qa.adminTest.CategoriesTest -->
-    </test> <!-- GCR Shop Categories Test_chrome -->
-    <test started-at="2024-01-10T19:58:33 IST" name="GCR Shop Product Test_chrome" finished-at="2024-01-10T19:59:47 IST" duration-ms="74684">
-      <class name="com.qa.adminTest.ProductTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:33 IST" name="setup" finished-at="2024-01-10T19:58:34 IST" duration-ms="1131" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chromium]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:34 IST" name="beforeClass" finished-at="2024-01-10T19:58:34 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.adminTest.CategoriesTest@5505ae1a]" started-at="2024-01-12T12:01:19 IST" name="beforeClass" finished-at="2024-01-12T12:01:19 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="addNewProduct()[pri:1, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:34 IST" name="addNewProduct" description="Add new Product" finished-at="2024-01-10T19:58:40 IST" duration-ms="5934" status="PASS">
+        <test-method signature="create_New_Category()[pri:1, instance:com.qa.adminTest.CategoriesTest@5505ae1a]" started-at="2024-01-12T12:01:19 IST" name="create_New_Category" description="Add new Category" finished-at="2024-01-12T12:01:23 IST" duration-ms="4509" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewProduct -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:40 IST" name="tearDown" finished-at="2024-01-10T19:58:40 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- create_New_Category -->
+        <test-method signature="update_Category()[pri:2, instance:com.qa.adminTest.CategoriesTest@5505ae1a]" started-at="2024-01-12T12:01:23 IST" name="update_Category" description="Update added category" finished-at="2024-01-12T12:01:26 IST" duration-ms="2668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_Category -->
+        <test-method signature="delete_Category()[pri:3, instance:com.qa.adminTest.CategoriesTest@5505ae1a]" started-at="2024-01-12T12:01:26 IST" name="delete_Category" description="Delete category" finished-at="2024-01-12T12:01:29 IST" duration-ms="3249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_Category -->
+        <test-method signature="add_Subcategory_In_Category()[pri:4, instance:com.qa.adminTest.CategoriesTest@5505ae1a]" started-at="2024-01-12T12:01:29 IST" name="add_Subcategory_In_Category" description="Add new subcategory in category" finished-at="2024-01-12T12:01:36 IST" duration-ms="6423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Subcategory_In_Category -->
+        <test-method signature="update_Subcategory()[pri:5, instance:com.qa.adminTest.CategoriesTest@5505ae1a]" started-at="2024-01-12T12:01:36 IST" name="update_Subcategory" description="Update subcategory" finished-at="2024-01-12T12:01:41 IST" duration-ms="5194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_Subcategory -->
+        <test-method signature="delete_Subcategory()[pri:6, instance:com.qa.adminTest.CategoriesTest@5505ae1a]" started-at="2024-01-12T12:01:41 IST" name="delete_Subcategory" description="Delete Category and Subcategory" finished-at="2024-01-12T12:01:47 IST" duration-ms="6608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_Subcategory -->
+      </class> <!-- com.qa.adminTest.CategoriesTest -->
+      <class name="com.qa.userTest.BuyProduct">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.userTest.BuyProduct@7a362b6b]" started-at="2024-01-12T12:02:36 IST" name="setup" finished-at="2024-01-12T12:02:37 IST" duration-ms="1077" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNewProduct status=SUCCESS method=ProductTest.addNewProduct()[pri:1, instance:com.qa.adminTest.ProductTest@55a147cc] output={null}]]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="updateProduct()[pri:2, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:40 IST" name="updateProduct" description="Update Product" finished-at="2024-01-10T19:58:45 IST" duration-ms="5273" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="buy_Product()[pri:1, instance:com.qa.userTest.BuyProduct@7a362b6b]" started-at="2024-01-12T12:02:37 IST" name="buy_Product" description="Place the order" finished-at="2024-01-12T12:02:51 IST" duration-ms="13972" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateProduct -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:45 IST" name="tearDown" finished-at="2024-01-10T19:58:45 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- buy_Product -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.userTest.BuyProduct@7a362b6b]" started-at="2024-01-12T12:02:37 IST" name="beforeClass" finished-at="2024-01-12T12:02:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+      </class> <!-- com.qa.userTest.BuyProduct -->
+      <class name="com.qa.userTest.RegisterUser">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.userTest.RegisterUser@2bb3058]" started-at="2024-01-12T12:02:18 IST" name="setup" finished-at="2024-01-12T12:02:19 IST" duration-ms="1432" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=updateProduct status=SUCCESS method=ProductTest.updateProduct()[pri:2, instance:com.qa.adminTest.ProductTest@55a147cc] output={null}]]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="deleteProduct()[pri:3, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:45 IST" name="deleteProduct" description="Delete Product" finished-at="2024-01-10T19:58:50 IST" duration-ms="5251" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at com.qa.adminTest.ProductTest.deleteProduct(ProductTest.java:123)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.userTest.RegisterUser@2bb3058]" started-at="2024-01-12T12:02:19 IST" name="beforeClass" finished-at="2024-01-12T12:02:19 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteProduct -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:50 IST" name="tearDown" finished-at="2024-01-10T19:58:51 IST" duration-ms="419" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method signature="ragister_User()[pri:1, instance:com.qa.userTest.RegisterUser@2bb3058]" started-at="2024-01-12T12:02:19 IST" name="ragister_User" description="New user Registration" finished-at="2024-01-12T12:02:36 IST" duration-ms="16313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ragister_User -->
+      </class> <!-- com.qa.userTest.RegisterUser -->
+      <class name="com.qa.adminTest.ProductTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.adminTest.ProductTest@73cd37c0]" started-at="2024-01-12T12:01:47 IST" name="setup" finished-at="2024-01-12T12:01:49 IST" duration-ms="1091" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteProduct status=FAILURE method=ProductTest.deleteProduct()[pri:3, instance:com.qa.adminTest.ProductTest@55a147cc] output={null}]]]>
+                <![CDATA[chromium]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="addProductUnderCatgory()[pri:4, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:51 IST" name="addProductUnderCatgory" description="Add new Product in Category" finished-at="2024-01-10T19:58:58 IST" duration-ms="7292" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.adminTest.ProductTest@73cd37c0]" started-at="2024-01-12T12:01:49 IST" name="beforeClass" finished-at="2024-01-12T12:01:49 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductUnderCatgory -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:58 IST" name="tearDown" finished-at="2024-01-10T19:58:58 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addProductUnderCatgory status=SUCCESS method=ProductTest.addProductUnderCatgory()[pri:4, instance:com.qa.adminTest.ProductTest@55a147cc] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="add_New_Product()[pri:1, instance:com.qa.adminTest.ProductTest@73cd37c0]" started-at="2024-01-12T12:01:49 IST" name="add_New_Product" description="Add new Product" finished-at="2024-01-12T12:01:55 IST" duration-ms="6910" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="updateProductInategory()[pri:5, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:58:58 IST" name="updateProductInategory" description="Update Product" finished-at="2024-01-10T19:59:47 IST" duration-ms="48794" status="FAIL">
-          <exception class="com.microsoft.playwright.TimeoutError">
-            <message>
-              <![CDATA[Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("input[name=\"products_name[1]\"]")
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("input[name=\"products_name[1]\"]")
-============================================================
-    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\progress.js:88:26)
-    at Frame.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\frames.js:1039:23)
-    at FrameDispatcher.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\frameDispatcher.js:166:30)
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\dispatcher.js:346:46)
-}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("input[name=\"products_name[1]\"]")
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("input[name=\"products_name[1]\"]")
-============================================================
-    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\progress.js:88:26)
-    at Frame.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\frames.js:1039:23)
-    at FrameDispatcher.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\frameDispatcher.js:166:30)
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\dispatcher.js:346:46)
-}
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
-at com.microsoft.playwright.impl.PageImpl.lambda$fill$27(PageImpl.java:656)
-at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:655)
-at com.microsoft.playwright.Page.fill(Page.java:4545)
-at com.qa.adminPages.ProductPage.updateProduct(ProductPage.java:78)
-at com.qa.adminTest.ProductTest.updateProductInategory(ProductTest.java:183)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("input[name=\"products_name[1]\"]")
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("input[name=\"products_name[1]\"]")
-============================================================
-    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\progress.js:88:26)
-    at Frame.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\frames.js:1039:23)
-    at FrameDispatcher.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\frameDispatcher.js:166:30)
-    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-1753537099222818813\package\lib\server\dispatchers\dispatcher.js:346:46)
-}
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+        </test-method> <!-- add_New_Product -->
+        <test-method signature="update_Product()[pri:2, instance:com.qa.adminTest.ProductTest@73cd37c0]" started-at="2024-01-12T12:01:55 IST" name="update_Product" description="Update Product" finished-at="2024-01-12T12:02:00 IST" duration-ms="4769" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateProductInategory -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:59:47 IST" name="tearDown" finished-at="2024-01-10T19:59:47 IST" duration-ms="254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=updateProductInategory status=FAILURE method=ProductTest.updateProductInategory()[pri:5, instance:com.qa.adminTest.ProductTest@55a147cc] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- update_Product -->
+        <test-method signature="delete_Product()[pri:3, instance:com.qa.adminTest.ProductTest@73cd37c0]" started-at="2024-01-12T12:02:00 IST" name="delete_Product" description="Delete Product" finished-at="2024-01-12T12:02:04 IST" duration-ms="4140" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:59:47 IST" name="afterTest" finished-at="2024-01-10T19:59:47 IST" duration-ms="317" status="PASS">
+        </test-method> <!-- delete_Product -->
+        <test-method signature="add_Product_Under_Catgory()[pri:4, instance:com.qa.adminTest.ProductTest@73cd37c0]" started-at="2024-01-12T12:02:04 IST" name="add_Product_Under_Catgory" description="Add new Product in Category" finished-at="2024-01-12T12:02:10 IST" duration-ms="5425" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuit()[pri:0, instance:com.qa.adminTest.ProductTest@55a147cc]" started-at="2024-01-10T19:59:47 IST" name="afterSuit" finished-at="2024-01-10T19:59:48 IST" duration-ms="398" status="PASS">
+        </test-method> <!-- add_Product_Under_Catgory -->
+        <test-method signature="update_Product_In_Category()[pri:5, instance:com.qa.adminTest.ProductTest@73cd37c0]" started-at="2024-01-12T12:02:10 IST" name="update_Product_In_Category" description="Update Product" finished-at="2024-01-12T12:02:14 IST" duration-ms="4227" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuit -->
+        </test-method> <!-- update_Product_In_Category -->
       </class> <!-- com.qa.adminTest.ProductTest -->
-    </test> <!-- GCR Shop Product Test_chrome -->
-  </suite> <!-- GCR Shop Admin test Suite -->
+      <class name="com.qa.userTest.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.userTest.LoginTest@21337f7b]" started-at="2024-01-12T12:02:14 IST" name="setup" finished-at="2024-01-12T12:02:15 IST" duration-ms="1330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.userTest.LoginTest@21337f7b]" started-at="2024-01-12T12:02:15 IST" name="beforeClass" finished-at="2024-01-12T12:02:15 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="login_Test1()[pri:1, instance:com.qa.userTest.LoginTest@21337f7b]" started-at="2024-01-12T12:02:15 IST" name="login_Test1" description="Login with valid Username and Password" finished-at="2024-01-12T12:02:18 IST" duration-ms="2693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_Test1 -->
+      </class> <!-- com.qa.userTest.LoginTest -->
+      <class name="com.qa.adminTest.ManufacturersTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.adminTest.ManufacturersTest@416c58f5]" started-at="2024-01-12T12:00:13 IST" name="setup" finished-at="2024-01-12T12:00:15 IST" duration-ms="1228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.adminTest.ManufacturersTest@416c58f5]" started-at="2024-01-12T12:00:15 IST" name="beforeClass" finished-at="2024-01-12T12:00:15 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="add_New_Manufacture()[pri:1, instance:com.qa.adminTest.ManufacturersTest@416c58f5]" started-at="2024-01-12T12:00:15 IST" name="add_New_Manufacture" description="Add new Manufacture" finished-at="2024-01-12T12:00:30 IST" duration-ms="15705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_New_Manufacture -->
+        <test-method signature="update_Manufacturer()[pri:2, instance:com.qa.adminTest.ManufacturersTest@416c58f5]" started-at="2024-01-12T12:00:30 IST" name="update_Manufacturer" description="Update Manufacture" finished-at="2024-01-12T12:00:51 IST" duration-ms="20487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_Manufacturer -->
+        <test-method signature="delete_Manufacturer()[pri:3, instance:com.qa.adminTest.ManufacturersTest@416c58f5]" started-at="2024-01-12T12:00:51 IST" name="delete_Manufacturer" description="Delete Manufacture" finished-at="2024-01-12T12:01:17 IST" duration-ms="26621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_Manufacturer -->
+      </class> <!-- com.qa.adminTest.ManufacturersTest -->
+      <class name="com.qa.adminTest.AdminLoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.adminTest.AdminLoginTest@2f67b837]" started-at="2024-01-12T11:59:57 IST" name="setup" finished-at="2024-01-12T12:00:03 IST" duration-ms="5422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.adminTest.AdminLoginTest@2f67b837]" started-at="2024-01-12T12:00:03 IST" name="beforeClass" finished-at="2024-01-12T12:00:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="login_Test()[pri:1, instance:com.qa.adminTest.AdminLoginTest@2f67b837]" started-at="2024-01-12T12:00:03 IST" name="login_Test" description="Login With Valid Data" finished-at="2024-01-12T12:00:11 IST" duration-ms="8143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_Test -->
+        <test-method signature="login_With_Invalid_Data()[pri:2, instance:com.qa.adminTest.AdminLoginTest@2f67b837]" started-at="2024-01-12T12:00:11 IST" name="login_With_Invalid_Data" description="Login With Invalid Data" finished-at="2024-01-12T12:00:13 IST" duration-ms="2376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_With_Invalid_Data -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.adminTest.AdminLoginTest@2f67b837]" started-at="2024-01-12T12:02:51 IST" name="tearDown" finished-at="2024-01-12T12:02:51 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.adminTest.AdminLoginTest -->
+    </test> <!-- GCR Shop Admin Test_chrome -->
+  </suite> <!-- GCR Shop test Suite -->
 </testng-results>

@@ -1,0 +1,441 @@
+<html>
+<head>
+<title>TestNG:  GCR Shop Admin Test_chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>GCR Shop Admin Test_chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 12 11:28:55 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>211 seconds (211294 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.adminTest.ProductTest.update_Product_In_Category()'><b>update_Product_In_Category</b><br>Test class: com.qa.adminTest.ProductTest<br>Test method: Update Product</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//span[text()=&apos;Edit&apos;]&quot;)
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//span[text()=&apos;Edit&apos;]&quot;)
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:577)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.qa.adminPages.ProductPage.updateProduct(ProductPage.java:76)
+	at com.qa.adminTest.ProductTest.update_Product_In_Category(ProductTest.java:172)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//span[text()=&apos;Edit&apos;]&quot;)
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//span[text()=&apos;Edit&apos;]&quot;)
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 40 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1163088324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1163088324'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//span[text()=&apos;Edit&apos;]&quot;)
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//span[text()=&apos;Edit&apos;]&quot;)
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:577)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:576)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.qa.adminPages.ProductPage.updateProduct(ProductPage.java:76)
+	at com.qa.adminTest.ProductTest.update_Product_In_Category(ProductTest.java:172)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//span[text()=&apos;Edit&apos;]&quot;)
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=//span[text()=&apos;Edit&apos;]&quot;)
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\frameDispatcher.js:154:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 40 more
+</pre></div></td>
+<td>32</td>
+<td>com.qa.adminTest.ProductTest@673be18f</td></tr>
+<tr>
+<td title='com.qa.userTest.LoginTest.login_Test2()'><b>login_Test2</b><br>Test class: com.qa.userTest.LoginTest<br>Test method: Login with valid Username and Invalid Password</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;input[name=\&quot;email_address\&quot;]&quot;)
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;input[name=\&quot;email_address\&quot;]&quot;)
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\progress.js:88:26)
+    at Frame.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\frames.js:1039:23)
+    at FrameDispatcher.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
+	at com.microsoft.playwright.impl.PageImpl.lambda$fill$27(PageImpl.java:656)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:655)
+	at com.microsoft.playwright.Page.fill(Page.java:4545)
+	at com.qa.userPages.UserLoginPage.enterUserEmail(UserLoginPage.java:30)
+	at com.qa.userTest.LoginTest.login_Test2(LoginTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;input[name=\&quot;email_address\&quot;]&quot;)
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;input[name=\&quot;email_address\&quot;]&quot;)
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\progress.js:88:26)
+    at Frame.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\frames.js:1039:23)
+    at FrameDispatcher.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 40 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1168079523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1168079523'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;input[name=\&quot;email_address\&quot;]&quot;)
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;input[name=\&quot;email_address\&quot;]&quot;)
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\progress.js:88:26)
+    at Frame.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\frames.js:1039:23)
+    at FrameDispatcher.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.fillImpl(FrameImpl.java:335)
+	at com.microsoft.playwright.impl.PageImpl.lambda$fill$27(PageImpl.java:656)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.fill(PageImpl.java:655)
+	at com.microsoft.playwright.Page.fill(Page.java:4545)
+	at com.qa.userPages.UserLoginPage.enterUserEmail(UserLoginPage.java:30)
+	at com.qa.userTest.LoginTest.login_Test2(LoginTest.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;input[name=\&quot;email_address\&quot;]&quot;)
+============================================================
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;input[name=\&quot;email_address\&quot;]&quot;)
+============================================================
+    at ProgressController.run (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\progress.js:88:26)
+    at Frame.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\frames.js:1039:23)
+    at FrameDispatcher.fill (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\frameDispatcher.js:166:30)
+    at DispatcherConnection.dispatch (C:\Users\DELL\AppData\Local\Temp\playwright-java-9502848029025979495\package\lib\server\dispatchers\dispatcher.js:346:46)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 40 more
+</pre></div></td>
+<td>30</td>
+<td>com.qa.userTest.LoginTest@6581dc0a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.adminTest.ManufacturersTest.delete_Manufacturer()'><b>delete_Manufacturer</b><br>Test class: com.qa.adminTest.ManufacturersTest<br>Test method: Delete Manufacture</td>
+<td></td>
+<td>20</td>
+<td>com.qa.adminTest.ManufacturersTest@5bf0fe62</td></tr>
+<tr>
+<td title='com.qa.adminTest.ProductTest.update_Product()'><b>update_Product</b><br>Test class: com.qa.adminTest.ProductTest<br>Test method: Update Product</td>
+<td></td>
+<td>3</td>
+<td>com.qa.adminTest.ProductTest@673be18f</td></tr>
+<tr>
+<td title='com.qa.adminTest.ManufacturersTest.update_Manufacturer()'><b>update_Manufacturer</b><br>Test class: com.qa.adminTest.ManufacturersTest<br>Test method: Update Manufacture</td>
+<td></td>
+<td>12</td>
+<td>com.qa.adminTest.ManufacturersTest@5bf0fe62</td></tr>
+<tr>
+<td title='com.qa.adminTest.CategoriesTest.update_Category()'><b>update_Category</b><br>Test class: com.qa.adminTest.CategoriesTest<br>Test method: Update added category</td>
+<td></td>
+<td>2</td>
+<td>com.qa.adminTest.CategoriesTest@1e097d59</td></tr>
+<tr>
+<td title='com.qa.adminTest.CategoriesTest.add_Subcategory_In_Category()'><b>add_Subcategory_In_Category</b><br>Test class: com.qa.adminTest.CategoriesTest<br>Test method: Add new subcategory in category</td>
+<td></td>
+<td>4</td>
+<td>com.qa.adminTest.CategoriesTest@1e097d59</td></tr>
+<tr>
+<td title='com.qa.adminTest.ProductTest.add_New_Product()'><b>add_New_Product</b><br>Test class: com.qa.adminTest.ProductTest<br>Test method: Add new Product</td>
+<td></td>
+<td>3</td>
+<td>com.qa.adminTest.ProductTest@673be18f</td></tr>
+<tr>
+<td title='com.qa.adminTest.CategoriesTest.update_Subcategory()'><b>update_Subcategory</b><br>Test class: com.qa.adminTest.CategoriesTest<br>Test method: Update subcategory</td>
+<td></td>
+<td>2</td>
+<td>com.qa.adminTest.CategoriesTest@1e097d59</td></tr>
+<tr>
+<td title='com.qa.adminTest.AdminLoginTest.login_Test()'><b>login_Test</b><br>Test class: com.qa.adminTest.AdminLoginTest<br>Test method: Login With Valid Data</td>
+<td></td>
+<td>1</td>
+<td>com.qa.adminTest.AdminLoginTest@4b23c30a</td></tr>
+<tr>
+<td title='com.qa.adminTest.CategoriesTest.delete_Subcategory()'><b>delete_Subcategory</b><br>Test class: com.qa.adminTest.CategoriesTest<br>Test method: Delete Category and Subcategory</td>
+<td></td>
+<td>4</td>
+<td>com.qa.adminTest.CategoriesTest@1e097d59</td></tr>
+<tr>
+<td title='com.qa.adminTest.AdminLoginTest.login_With_Invalid_Data()'><b>login_With_Invalid_Data</b><br>Test class: com.qa.adminTest.AdminLoginTest<br>Test method: Login With Invalid Data</td>
+<td></td>
+<td>1</td>
+<td>com.qa.adminTest.AdminLoginTest@4b23c30a</td></tr>
+<tr>
+<td title='com.qa.userTest.LoginTest.login_Test1()'><b>login_Test1</b><br>Test class: com.qa.userTest.LoginTest<br>Test method: Login with valid Username and Password</td>
+<td></td>
+<td>4</td>
+<td>com.qa.userTest.LoginTest@6581dc0a</td></tr>
+<tr>
+<td title='com.qa.adminTest.CategoriesTest.create_New_Category()'><b>create_New_Category</b><br>Test class: com.qa.adminTest.CategoriesTest<br>Test method: Add new Category</td>
+<td></td>
+<td>5</td>
+<td>com.qa.adminTest.CategoriesTest@1e097d59</td></tr>
+<tr>
+<td title='com.qa.adminTest.ProductTest.delete_Product()'><b>delete_Product</b><br>Test class: com.qa.adminTest.ProductTest<br>Test method: Delete Product</td>
+<td></td>
+<td>3</td>
+<td>com.qa.adminTest.ProductTest@673be18f</td></tr>
+<tr>
+<td title='com.qa.userTest.BuyProduct.buy_Product()'><b>buy_Product</b><br>Test class: com.qa.userTest.BuyProduct<br>Test method: Place the order</td>
+<td></td>
+<td>24</td>
+<td>com.qa.userTest.BuyProduct@6ce86ce1</td></tr>
+<tr>
+<td title='com.qa.adminTest.ProductTest.add_Product_Under_Catgory()'><b>add_Product_Under_Catgory</b><br>Test class: com.qa.adminTest.ProductTest<br>Test method: Add new Product in Category</td>
+<td></td>
+<td>5</td>
+<td>com.qa.adminTest.ProductTest@673be18f</td></tr>
+<tr>
+<td title='com.qa.adminTest.ManufacturersTest.add_New_Manufacture()'><b>add_New_Manufacture</b><br>Test class: com.qa.adminTest.ManufacturersTest<br>Test method: Add new Manufacture</td>
+<td></td>
+<td>8</td>
+<td>com.qa.adminTest.ManufacturersTest@5bf0fe62</td></tr>
+<tr>
+<td title='com.qa.adminTest.CategoriesTest.delete_Category()'><b>delete_Category</b><br>Test class: com.qa.adminTest.CategoriesTest<br>Test method: Delete category</td>
+<td></td>
+<td>3</td>
+<td>com.qa.adminTest.CategoriesTest@1e097d59</td></tr>
+<tr>
+<td title='com.qa.userTest.RegisterUser.ragister_User()'><b>ragister_User</b><br>Test class: com.qa.userTest.RegisterUser<br>Test method: New user Registration</td>
+<td></td>
+<td>19</td>
+<td>com.qa.userTest.RegisterUser@39de3d36</td></tr>
+</table><p>
+</body>
+</html>

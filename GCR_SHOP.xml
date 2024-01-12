@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="GCR Shop test Suite" verbose="1" parallel="tests"
-	thread-count="1">
-
-	<test name="GCR Shop Admin Login Test_chrome">
+<suite name="GCR Shop test Suite" thread-count="1">
+	<listeners>
+		<listener class-name="com.qa.listeners.ExtentReportListener"></listener>
+	</listeners>
+	
+	<test name="GCR Shop Admin Test_chrome">
 		<parameter name="browser" value="chromium"></parameter>
 		<classes>
 			<class name="com.qa.adminTest.AdminLoginTest" />
+			<class name="com.qa.adminTest.ManufacturersTest" />
+			<class name="com.qa.adminTest.CategoriesTest" />
+			<class name="com.qa.adminTest.ProductTest" />
+			<class name="com.qa.userTest.LoginTest" />
+			<class name="com.qa.userTest.RegisterUser" />
+			<class name="com.qa.userTest.BuyProduct" />
 		</classes>
 	</test>
-
+<!-- 
 	<test name="GCR Shop Manufacturers Test_chrome">
 		<parameter name="browser" value="chromium"></parameter>
 		<classes>
@@ -18,6 +26,7 @@
 		</classes>
 	</test>
 
+	 
 	<test name="GCR Shop Categories Test_chrome">
 		<parameter name="browser" value="chromium"></parameter>
 		<classes>
@@ -31,7 +40,7 @@
 			<class name="com.qa.adminTest.ProductTest" />
 		</classes>
 	</test>
-	
+	 
 	<test name="GCR Shop User Login Test_chrome">
 		 <parameter name="browser" value="chromium"></parameter>
 		<classes>
@@ -53,4 +62,5 @@
 		</classes>
 	</test>
 
+-->
 </suite>

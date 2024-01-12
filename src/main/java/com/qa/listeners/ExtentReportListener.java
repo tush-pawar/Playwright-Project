@@ -1,7 +1,5 @@
 package com.qa.listeners;
 
-
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -21,13 +19,12 @@ import static com.qa.factory.playwrightFactory.takeScreenshot;
 
 public class ExtentReportListener implements ITestListener {
 
-	private static final String OUTPUT_FOLDER = "./build/";
-	private static final String FILE_NAME = "TestExecutionReport.html";
+	private static final String OUTPUT_FOLDER = "./TestReport/";
+	private static final String FILE_NAME = "Report.html";
 
 	private static ExtentReports extent = init();
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 	private static ExtentReports extentReports;
-	
 
 	private static ExtentReports init() {
 
@@ -41,25 +38,21 @@ public class ExtentReportListener implements ITestListener {
 				e.printStackTrace();
 			}
 		}
-		
+
 		extentReports = new ExtentReports();
 		ExtentSparkReporter reporter = new ExtentSparkReporter(OUTPUT_FOLDER + FILE_NAME);
-		reporter.config().setReportName("Open Cart Automation Test Results");
+		reporter.config().setReportName("GCR SHOP Automation Test");
 		extentReports.attachReporter(reporter);
 		extentReports.setSystemInfo("System", "Windows");
-		extentReports.setSystemInfo("Author", "E-Com");
-		extentReports.setSystemInfo("Build#", "1.1");
-		extentReports.setSystemInfo("Team", "OMS");
-		extentReports.setSystemInfo("Customer Name", "E-Com");
-
-
+		extentReports.setSystemInfo("Operating System: ", System.getProperty("os.name"));
+		extentReports.setSystemInfo("Java Version: ", System.getProperty("java.version"));
 		return extentReports;
 	}
 
 	@Override
 	public synchronized void onStart(ITestContext context) {
 		System.out.println("Test Suite started!");
-		
+
 	}
 
 	@Override
@@ -93,20 +86,22 @@ public class ExtentReportListener implements ITestListener {
 
 	public synchronized void onTestSuccess(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " passed!"));
-		test.get().pass("Test passed");
-		test.get().pass(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(takeScreenshot(),result.getMethod().getMethodName()).build());
+//		test.get().pass("Test passed");
+//		test.get().pass(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(takeScreenshot(),result.getMethod().getMethodName()).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	public synchronized void onTestFailure(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
-		test.get().fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(takeScreenshot(),result.getMethod().getMethodName()).build());
+		test.get().fail(result.getThrowable(), MediaEntityBuilder
+				.createScreenCaptureFromBase64String(takeScreenshot(), result.getMethod().getMethodName()).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	public synchronized void onTestSkipped(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " skipped!"));
-		test.get().skip(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(takeScreenshot(), result.getMethod().getMethodName()).build());
+		test.get().skip(result.getThrowable(), MediaEntityBuilder
+				.createScreenCaptureFromBase64String(takeScreenshot(), result.getMethod().getMethodName()).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 

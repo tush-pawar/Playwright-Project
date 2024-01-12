@@ -1,6 +1,6 @@
 package com.qa.adminTest;
 
-import java.util.*;
+import java.util.Random;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -23,7 +23,7 @@ public class CurrencyTest extends BaseTest {
 	String value;
 
 	@BeforeClass
-	public void beforeCalss() {
+	public void beforeClass() {
 		adminLoginPage = new AdminLoginPage(page, prop);
 		homePage = new HomePage(page);
 		currenciesPage = new CurrenciesPage(page);
@@ -37,128 +37,125 @@ public class CurrencyTest extends BaseTest {
 		symbolLeft = "";
 		symbolRight = "RS";
 	}
-
+	
+	
 	@Test(priority = 1, description = "Add new Currency")
-	public void addNewCurrency() {
-		extentTest = extentReports.createTest("Add new Currency").assignAuthor("GCR Shop Testing");
+	public void add_New_Currency() {
 
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 
-		extentTest.info("Login to application");
+		test.get().info("Login to application");
 		adminLoginPage.loginAdmin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
-		extentTest.info("Navigate to categories tab");
+		test.get().info("Navigate to categories tab");
 		homePage.clickOnLocalization();
 		currenciesPage.clickOnCurrenciesTab();
 
-		extentTest.info("Add new Currency");
+		test.get().info("Add new Currency");
 		currenciesPage.addNewCurrency(currencyTitle, currencyCode, symbolLeft, symbolRight, decimalPoint,
 				thousandsPoint, decimalPlaces, value);
 
-		extentTest.info("Check added currency");
+		test.get().info("Check added currency");
 		boolean checkAddedCurrency = currenciesPage.checkAddedCurrency(currencyTitle);
 		Assert.assertTrue(checkAddedCurrency);
 
-		extentTest.pass("Added new Currency successfully");
+		test.get().pass("Added new Currency successfully");
 
 	}
 
 	@Test(priority = 2, description = "Update Currency")
-	public void updateCurrency() {
-		extentTest = extentReports.createTest("Add new Currency").assignAuthor("GCR Shop Testing");
+	public void update_Currency() {
 
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 
-		extentTest.info("Login to application");
+		test.get().info("Login to application");
 		adminLoginPage.loginAdmin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
-		extentTest.info("Navigate to categories tab");
+		test.get().info("Navigate to categories tab");
 		homePage.clickOnLocalization();
 		currenciesPage.clickOnCurrenciesTab();
 
-		extentTest.info("Click on Currency");
+		test.get().info("Click on Currency");
 		currenciesPage.clickOnCurrency(currencyTitle);
 
-		extentTest.info("Click on Currency");
+		test.get().info("Click on Currency");
 		currencyTitle = "currency_" + new Random().nextInt(999);
 		value = "" + new Random().nextInt(999);
 		currenciesPage.updateCurrencyValue(currencyTitle, value);
 
-		extentTest.info("Check updated currency");
+		test.get().info("Check updated currency");
 		boolean checkUpdatedCurrency = currenciesPage.checkUpdatedCurrency(currencyTitle);
 		Assert.assertTrue(checkUpdatedCurrency);
 
-		extentTest.pass("Currency updated successfully");
+		test.get().pass("Currency updated successfully");
 
 	}
 
 	@Test(priority = 3, description = "Set as Default Currency")
-	public void setAsDefault() {
+	public void set_As_Default_Currency() {
 
-		extentTest = extentReports.createTest("Set as Default Currency").assignAuthor("GCR Shop Testing");
 
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 
-		extentTest.info("Login to application");
+		test.get().info("Login to application");
 		adminLoginPage.loginAdmin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
-		extentTest.info("Navigate to categories tab");
+		test.get().info("Navigate to categories tab");
 		homePage.clickOnLocalization();
 		currenciesPage.clickOnCurrenciesTab();
 
-		extentTest.info("Click on Currency");
+		test.get().info("Click on Currency");
 		currenciesPage.clickOnCurrency(currencyTitle);
 
-		extentTest.info("Set Currency as a default");
+		test.get().info("Set Currency as a default");
 		currenciesPage.setDefaultCurrency();
 
-		extentTest.info("Check currency set as Default");
+		test.get().info("Check currency set as Default");
 		boolean checkCurrencySetAsDefault = currenciesPage.checkCurrencySetAsDefault(currencyTitle);
 		Assert.assertTrue(checkCurrencySetAsDefault);
 
-		extentTest.info("Currency set as Default successfully");
+		test.get().pass("Currency set as Default successfully");
 
 	}
 
 	@Test(priority = 4, description = "Delete Currency")
-	public void deleteCurrency() {
+	public void delete_Currency() {
 
-		extentTest = extentReports.createTest("Delete Currency").assignAuthor("GCR Shop Testing");
 
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 
-		extentTest.info("Login to application");
+		test.get().info("Login to application");
 		adminLoginPage.loginAdmin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
-		extentTest.info("Navigate to categories tab");
+		test.get().info("Navigate to categories tab");
 		homePage.clickOnLocalization();
 		currenciesPage.clickOnCurrenciesTab();
 
-		extentTest.info("Add new Currency");
+		test.get().info("Add new Currency");
 		currencyTitle = "currency_" + new Random().nextInt(9999);
 		value = "" + new Random().nextInt(999);
 		currenciesPage.addNewCurrency(currencyTitle, currencyCode, symbolLeft, symbolRight, decimalPoint,
 				thousandsPoint, decimalPlaces, value);
 
-		extentTest.info("Check added currency");
+		test.get().info("Check added currency");
 		boolean checkAddedCurrency = currenciesPage.checkAddedCurrency(currencyTitle);
 		Assert.assertTrue(checkAddedCurrency);
 
-		extentTest.info("Click on Currency");
+		test.get().info("Click on Currency");
 		currenciesPage.clickOnCurrency(currencyTitle);
 
-		extentTest.info("Delete Currency");
+		test.get().info("Delete Currency");
 		currenciesPage.deleteCurrency();
 
-		extentTest.info("Check Currency is deleted");
+		test.get().info("Check Currency is deleted");
 		boolean checkIsCurrencyDelete = currenciesPage.checkIsCurrencyDelete(currencyTitle);
 		Assert.assertTrue(checkIsCurrencyDelete);
 
-		extentTest.pass("Currency Deleted successfully");
+		test.get().pass("Currency Deleted successfully");
 
 	}
 

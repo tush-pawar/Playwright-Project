@@ -1,8 +1,8 @@
 package com.qa.adminTest;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.Assert;
 
 import com.qa.adminPages.AdminLoginPage;
 import com.qa.adminPages.HomePage;
@@ -15,29 +15,31 @@ public class AdminLoginTest extends BaseTest {
 		adminLoginPage = new AdminLoginPage(page, prop);
 		homePage=new HomePage(page);
 	}
-
+	
+	
+	
+	
 	@Test(priority = 1, description = "Login With Valid Data")
-	public void loginTest() {
+	public void login_Test() {
 		
-		extentTest = extentReports.createTest("Login With Valid Data").assignAuthor("GCR Shop Testing");
 
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 		
-		extentTest.info("Enter Admin User Name");
+		test.get().info("Enter Admin User Name");
 		adminLoginPage.enterUserName(prop.getProperty("username").trim());
 		
-		extentTest.info("Enter Admin Password");
+		test.get().info("Enter Admin Password");
 		adminLoginPage.enterPassword(prop.getProperty("password").trim());
 		
-		extentTest.info("Click on Login Button");
+		test.get().info("Click on Login Button");
 		adminLoginPage.clickOnLogin();
 		
-		extentTest.info("Check Admin is Logged in ");
+		test.get().info("Check Admin is Logged in ");
 		boolean logOffVisible = homePage.isLogOffVisible();
 		Assert.assertTrue(logOffVisible);
 		
-		extentTest.pass("Admin Login Succesfully");
+		test.get().pass("Admin Login Succesfully");
 		
 		
 //		extentTest.info("Navigate to application",
@@ -45,25 +47,25 @@ public class AdminLoginTest extends BaseTest {
 	}
 
 	@Test(priority = 2, description = "Login With Invalid Data")
-	public void loginWithInvalidData() {
-		extentTest = extentReports.createTest("Login With Invalid Data").assignAuthor("GCR Shop Testing");
-		extentTest.info("Navigate to application");
+	public void login_With_Invalid_Data() {
+		
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 		
-		extentTest.info("Enter Admin User Name");
+		test.get().info("Enter Admin User Name");
 		adminLoginPage.enterUserName(prop.getProperty("invalidUsername").trim());
 		
-		extentTest.info("Enter Admin Password");
+		test.get().info("Enter Admin Password");
 		adminLoginPage.enterPassword(prop.getProperty("invalidPassword").trim());
 		
-		extentTest.info("Click on Login Button");
+		test.get().info("Click on Login Button");
 		adminLoginPage.clickOnLogin();
 
-		extentTest.info("Validate the error message");
+		test.get().info("Validate the error message");
 		String errorMessage = adminLoginPage.getErrorMessage();
 		Assert.assertEquals(errorMessage, " Error: Invalid administrator login attempt.");
 
-		extentTest.pass("Admin NOT Logged in with Invalid Username and Password");
+		test.get().pass("Admin NOT Logged in with Invalid Username and Password");
 
 		
 	}

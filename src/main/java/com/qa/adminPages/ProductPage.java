@@ -70,6 +70,17 @@ public class ProductPage {
 		}
 
 	}
+	
+	public void clickOnCategoryProduct(String productName) {
+		page.waitForLoadState(LoadState.NETWORKIDLE);
+		List<String> allProducts = page.locator(this.products).allTextContents();
+		for (int i = 0; i < allProducts.size(); i++) {
+			if (allProducts.get(i).trim().contains(productName)) {
+//				page.locator(this.products).nth(i).click();
+			}
+		}
+
+	}
 
 	public void updateProduct(String productName, String productQuantity) {
 

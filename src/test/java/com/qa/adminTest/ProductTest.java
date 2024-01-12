@@ -1,6 +1,6 @@
 package com.qa.adminTest;
 
-import java.util.*;
+import java.util.Random;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -22,9 +22,9 @@ public class ProductTest extends BaseTest {
 	String productPrice = "" + new Random().nextInt(999999);
 	String productQuantity = "" + new Random().nextInt(99);
 	String productModel = "" + new Random().nextInt(9999);
-	String dd = "22" ;
-	String mm = "02" ;
-	String yyyy = "2022" ;
+	String dd = "22";
+	String mm = "02";
+	String yyyy = "2022";
 
 	@BeforeClass
 	public void beforeClass() {
@@ -39,192 +39,181 @@ public class ProductTest extends BaseTest {
 	}
 
 	@Test(priority = 1, description = "Add new Product")
-	public void addNewProduct() {
+	public void add_New_Product() {
 
-		extentTest = extentReports.createTest("Add new Product").assignAuthor("GCR Shop Testing");
-
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 
-		extentTest.info("Login to application");
+		test.get().info("Login to application");
 		adminLoginPage.loginAdmin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
-		extentTest.info("Navigate to Products tab");
+		test.get().info("Navigate to Products tab");
 		homePage.clickOnCatalog();
 		productPage.clickOnProductsTab();
 
-		extentTest.info("Add new Product ");
+		test.get().info("Add new Product ");
 		productPage.addNewProduct(date, productName, productPrice, productDiscription, productQuantity, productModel);
 
-		extentTest.info("Check added product in the list");
+		test.get().info("Check added product in the list");
 		boolean checkAddedProduct = productPage.checkAddedProduct(productName);
 		Assert.assertTrue(checkAddedProduct);
 
-		extentTest.pass("Added new Product successfully");
+		test.get().pass("Added new Product successfully");
 
 	}
 
 	@Test(priority = 2, description = "Update Product")
-	public void updateProduct() {
+	public void update_Product() {
 
-		extentTest = extentReports.createTest("Update Product").assignAuthor("GCR Shop Testing");
-
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 
-		extentTest.info("Login to application");
+		test.get().info("Login to application");
 		adminLoginPage.loginAdmin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
-		extentTest.info("Navigate to Products tab");
+		test.get().info("Navigate to Products tab");
 		homePage.clickOnCatalog();
 		productPage.clickOnProductsTab();
 
-		extentTest.info("Click on Product");
-		System.out.println("name of Product: " + productName);
+		test.get().info("Click on Product");
 		productPage.clickOnProduct(productName);
 
-		extentTest.info("Update the Product");
+		test.get().info("Update the Product");
 		productName = "product_" + new Random().nextInt(999);
 		productQuantity = "" + new Random().nextInt(99);
 		productPage.updateProduct(productName, productQuantity);
 
-		extentTest.info("Check updated Product in the list");
+		test.get().info("Check updated Product in the list");
 		boolean checkUpdatedProduct = productPage.checkUpdatedProduct(productName);
 		Assert.assertTrue(checkUpdatedProduct);
 
-		extentTest.pass("Product updated successfully");
+		test.get().pass("Product updated successfully");
 
 	}
 
 	@Test(priority = 3, description = "Delete Product")
-	public void deleteProduct() {
-		extentTest = extentReports.createTest("Delete Product").assignAuthor("GCR Shop Testing");
+	public void delete_Product() {
 
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 
-		extentTest.info("Login to application");
+		test.get().info("Login to application");
 		adminLoginPage.loginAdmin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
-		extentTest.info("Navigate to Products tab");
+		test.get().info("Navigate to Products tab");
 		homePage.clickOnCatalog();
 		productPage.clickOnProductsTab();
 
-		extentTest.info("Click on Product");
+		test.get().info("Click on Product");
 		productPage.clickOnProduct(productName);
 
-		extentTest.info("Delete the Product");
+		test.get().info("Delete the Product");
 		productPage.deleteProduct(productName);
 
-		extentTest.info("Check is Product Delete");
+		test.get().info("Check is Product Delete");
 		boolean checkDeleteProduct = productPage.checkDeleteProduct(productName);
 		Assert.assertTrue(checkDeleteProduct);
 
-		extentTest.pass("Product Deleted successfully");
+		test.get().pass("Product Deleted successfully");
 	}
 
 	@Test(priority = 4, description = "Add new Product in Category")
-	public void addProductUnderCatgory() {
+	public void add_Product_Under_Catgory() {
 
-		extentTest = extentReports.createTest("Add new Product in Category").assignAuthor("GCR Shop Testing");
-
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 
-		extentTest.info("Login to application");
+		test.get().info("Login to application");
 		adminLoginPage.loginAdmin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
-		extentTest.info("Navigate to Products tab");
+		test.get().info("Navigate to Products tab");
 		homePage.clickOnCatalog();
 		productPage.clickOnProductsTab();
 
-		extentTest.info("Adding new Category");
+		test.get().info("Adding new Category");
 		categoryPage.addNewCategory(categoryName, order);
 
-		extentTest.info("Navigate to Category");
+		test.get().info("Navigate to Category");
 		categoryPage.navigateToCategory(categoryName);
 
-		extentTest.info("Add new Product ");
+		test.get().info("Add new Product ");
 		productPage.addNewProduct(date, productName, productPrice, productDiscription, productQuantity, productModel);
 
-		extentTest.info("Check added product in the list");
+		test.get().info("Check added product in the list");
 		boolean checkAddedProduct = productPage.checkAddedProduct(productName);
 		Assert.assertTrue(checkAddedProduct);
-		
-		extentTest.pass("Product Added in Category successfully");
+
+		test.get().pass("Product Added in Category successfully");
 
 	}
 
 	@Test(priority = 5, description = "Update Product")
-	public void updateProductInategory() {
+	public void update_Product_In_Category() {
 
-		extentTest = extentReports.createTest("Update Product").assignAuthor("GCR Shop Testing");
-
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 
-		extentTest.info("Login to application");
+		test.get().info("Login to application");
 		adminLoginPage.loginAdmin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
-		extentTest.info("Navigate to Products tab");
+		test.get().info("Navigate to Products tab");
 		homePage.clickOnCatalog();
 		productPage.clickOnProductsTab();
 
-		extentTest.info("Navigate to Category");
+		test.get().info("Navigate to Category");
 		categoryPage.navigateToCategory(categoryName);
 
-		extentTest.info("Click on Product");
-		productPage.clickOnProduct(productName);
+		test.get().info("Click on Product");
+		productPage.clickOnCategoryProduct(productName);
 
-		extentTest.info("Update the Product");
+		test.get().info("Update the Product");
 		productName = "product_" + new Random().nextInt(999);
 		productQuantity = "" + new Random().nextInt(99);
 		productPage.updateProduct(productName, productQuantity);
 
-		extentTest.info("Check updated Product in the list");
+		test.get().info("Check updated Product in the list");
 		boolean checkUpdatedProduct = productPage.checkUpdatedProduct(productName);
 		Assert.assertTrue(checkUpdatedProduct);
 
-		extentTest.pass("Product updated in category successfully");
+		test.get().pass("Product updated in category successfully");
 
 	}
 
 //	@Test(priority = 6, description = "Delete Peoduct and Category")
-	public void deleteProductAndCategory() {
-		extentTest = extentReports.createTest("Delete Peoduct and Category").assignAuthor("GCR Shop Testing");
+	public void delete_Product_And_Category() {
 
-		extentTest.info("Navigate to application");
+		test.get().info("Navigate to application");
 		adminLoginPage.goToAdminLoginPage();
 
-		extentTest.info("Login to application");
+		test.get().info("Login to application");
 		adminLoginPage.loginAdmin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
-		extentTest.info("Navigate to Products tab");
+		test.get().info("Navigate to Products tab");
 		homePage.clickOnCatalog();
 		productPage.clickOnProductsTab();
 
-		extentTest.info("Navigate to Category");
+		test.get().info("Navigate to Category");
 		categoryPage.navigateToCategory(categoryName);
 
-		extentTest.info("Click on Product");
+		test.get().info("Click on Product");
 		System.out.println("name of Product: " + productName);
 		productPage.clickOnProduct(productName);
 
-		extentTest.info("Delete the Product");
+		test.get().info("Delete the Product");
 		productPage.deleteProduct(productName);
 
-		extentTest.info("Check is Product Delete");
+		test.get().info("Check is Product Delete");
 		boolean checkDeleteProduct = productPage.checkDeleteProduct(productName);
 		Assert.assertTrue(checkDeleteProduct);
 
-		extentTest.info("Delete the Category");
+		test.get().info("Delete the Category");
 		categoryPage.deleteCategory(categoryName);
 
-		extentTest.info("Check Category is deleted");
+		test.get().info("Check Category is deleted");
 		boolean checkDeletedCategory = categoryPage.checkDeletedCategory(categoryName);
 		Assert.assertTrue(checkDeletedCategory);
 
-		extentTest.pass("Product and Category Deleted successfully");
+		test.get().pass("Product and Category Deleted successfully");
 
 	}
 }

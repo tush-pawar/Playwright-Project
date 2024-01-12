@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="GCR Shop test Suite" thread-count="1">
+<suite name="GCR Shop test" thread-count="1">
 	<listeners>
 		<listener class-name="com.qa.listeners.ExtentReportListener"></listener>
 	</listeners>
 	
-	<test name="GCR Shop Admin Test_chrome">
+	<test name="GCR Shop Test_chrome">
 		<parameter name="browser" value="chromium"></parameter>
 		<classes>
 			<class name="com.qa.adminTest.AdminLoginTest" />

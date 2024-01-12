@@ -11,7 +11,7 @@
 <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
-<style type="text/css"></style></head><body class="spa -report standard">
+<style type="text/css"></style></head><body class="spa -report dark">
   <div class="app">
     <div class="layout">
 <div class="header navbar">
@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">GCR SHOP Automation Test</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 12, 2024 11:59:57 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 12, 2024 03:16:31 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -72,6 +77,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,37 +85,36 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">CategoriesTest</a><a class="dropdown-item" href="#">ManufacturersTest</a><a class="dropdown-item" href="#">ProductTest</a><a class="dropdown-item" href="#">LoginTest</a><a class="dropdown-item" href="#">AdminLoginTest</a><a class="dropdown-item" href="#">RegisterUser</a><a class="dropdown-item" href="#">GCRShoptestSuite</a><a class="dropdown-item" href="#">BuyProduct</a>
+<a class="dropdown-item" href="#">GCRShoptestSuite</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
-          tag="AdminLoginTest GCRShoptestSuite"
+          tag="GCRShoptestSuite"
           device="">
           <div class="test-detail">
             <p class="name">login_Test</p>
             <p class="text-sm">
-              <span>12:00:03 PM</span> / <span>00:00:08:143</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:16:37 pm</span> / <span>00:00:09:101</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">login_Test</h5>
-<span class='badge badge-success'>01.12.2024 12:00:03 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:00:11 PM</span>
-<span class='badge badge-default'>00:00:08:143</span>
+<h5 class="test-status text-fail">login_Test</h5>
+<span class='badge badge-success'>01.12.2024 3:16:37 pm</span>
+<span class='badge badge-danger'>01.12.2024 3:16:46 pm</span>
+<span class='badge badge-default'>00:00:09:101</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">AdminLoginTest</span>
-<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
 <div class="m-t-10 m-l-5">Login With Valid Data</div>
 </div>
 </div><div class="detail-body mt-4">
@@ -118,44 +123,92 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:03 PM</td>
+        <td>3:16:37 pm</td>
         <td>
           Navigate to application
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:07 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:16:46 pm</td>
         <td>
-          Enter Admin User Name
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:07 PM</td>
-        <td>
-          Enter Admin Password
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:07 PM</td>
-        <td>
-          Click on Login Button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:11 PM</td>
-        <td>
-          Check Admin is Logged in 
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:00:11 PM</td>
-        <td>
-          Admin Login Succesfully
+          <textarea readonly class="code-block">com.microsoft.playwright.PlaywrightException: Error {
+  message='net::ERR_NAME_NOT_RESOLVED at http://gcreddy.com/project/admin/login.php
+=========================== logs ===========================
+navigating to "http://gcreddy.com/project/admin/login.php", waiting until "load"
+============================================================
+  name='Error
+  stack='Error: net::ERR_NAME_NOT_RESOLVED at http://gcreddy.com/project/admin/login.php
+=========================== logs ===========================
+navigating to "http://gcreddy.com/project/admin/login.php", waiting until "load"
+============================================================
+    at FrameSession._navigate (C:\Users\DELL\AppData\Local\Temp\playwright-java-2541282771639552651\package\lib\server\chromium\crPage.js:506:35)
+    at async Frame._gotoAction (C:\Users\DELL\AppData\Local\Temp\playwright-java-2541282771639552651\package\lib\server\frames.js:534:28)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
+	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$45(PageImpl.java:827)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:827)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+	at com.microsoft.playwright.Page.navigate(Page.java:5282)
+	at com.qa.adminPages.AdminLoginPage.goToAdminLoginPage(AdminLoginPage.java:24)
+	at com.qa.adminTest.AdminLoginTest.login_Test(AdminLoginTest.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='net::ERR_NAME_NOT_RESOLVED at http://gcreddy.com/project/admin/login.php
+=========================== logs ===========================
+navigating to "http://gcreddy.com/project/admin/login.php", waiting until "load"
+============================================================
+  name='Error
+  stack='Error: net::ERR_NAME_NOT_RESOLVED at http://gcreddy.com/project/admin/login.php
+=========================== logs ===========================
+navigating to "http://gcreddy.com/project/admin/login.php", waiting until "load"
+============================================================
+    at FrameSession._navigate (C:\Users\DELL\AppData\Local\Temp\playwright-java-2541282771639552651\package\lib\server\chromium\crPage.js:506:35)
+    at async Frame._gotoAction (C:\Users\DELL\AppData\Local\Temp\playwright-java-2541282771639552651\package\lib\server\frames.js:534:28)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+        <a href="data:image/png;base64,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AAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIL9B03hPczkSC9YAAAAAElFTkSuQmCC" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+        <div class="title">login_Test</div>
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -163,31 +216,30 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
-          tag="AdminLoginTest GCRShoptestSuite"
+          tag="GCRShoptestSuite"
           device="">
           <div class="test-detail">
             <p class="name">login_With_Invalid_Data</p>
             <p class="text-sm">
-              <span>12:00:11 PM</span> / <span>00:00:02:376</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:16:46 pm</span> / <span>00:00:03:052</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">login_With_Invalid_Data</h5>
-<span class='badge badge-success'>01.12.2024 12:00:11 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:00:13 PM</span>
-<span class='badge badge-default'>00:00:02:376</span>
+<h5 class="test-status text-fail">login_With_Invalid_Data</h5>
+<span class='badge badge-success'>01.12.2024 3:16:46 pm</span>
+<span class='badge badge-danger'>01.12.2024 3:16:49 pm</span>
+<span class='badge badge-default'>00:00:03:052</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">AdminLoginTest</span>
-<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
 <div class="m-t-10 m-l-5">Login With Invalid Data</div>
 </div>
 </div><div class="detail-body mt-4">
@@ -196,44 +248,92 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:11 PM</td>
+        <td>3:16:46 pm</td>
         <td>
           Navigate to application
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:13 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:16:49 pm</td>
         <td>
-          Enter Admin User Name
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:13 PM</td>
-        <td>
-          Enter Admin Password
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:13 PM</td>
-        <td>
-          Click on Login Button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:13 PM</td>
-        <td>
-          Validate the error message
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:00:13 PM</td>
-        <td>
-          Admin NOT Logged in with Invalid Username and Password
+          <textarea readonly class="code-block">com.microsoft.playwright.PlaywrightException: Error {
+  message='net::ERR_NAME_NOT_RESOLVED at http://gcreddy.com/project/admin/login.php
+=========================== logs ===========================
+navigating to "http://gcreddy.com/project/admin/login.php", waiting until "load"
+============================================================
+  name='Error
+  stack='Error: net::ERR_NAME_NOT_RESOLVED at http://gcreddy.com/project/admin/login.php
+=========================== logs ===========================
+navigating to "http://gcreddy.com/project/admin/login.php", waiting until "load"
+============================================================
+    at FrameSession._navigate (C:\Users\DELL\AppData\Local\Temp\playwright-java-2541282771639552651\package\lib\server\chromium\crPage.js:506:35)
+    at async Frame._gotoAction (C:\Users\DELL\AppData\Local\Temp\playwright-java-2541282771639552651\package\lib\server\frames.js:534:28)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
+	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$45(PageImpl.java:827)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:827)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+	at com.microsoft.playwright.Page.navigate(Page.java:5282)
+	at com.qa.adminPages.AdminLoginPage.goToAdminLoginPage(AdminLoginPage.java:24)
+	at com.qa.adminTest.AdminLoginTest.login_With_Invalid_Data(AdminLoginTest.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='net::ERR_NAME_NOT_RESOLVED at http://gcreddy.com/project/admin/login.php
+=========================== logs ===========================
+navigating to "http://gcreddy.com/project/admin/login.php", waiting until "load"
+============================================================
+  name='Error
+  stack='Error: net::ERR_NAME_NOT_RESOLVED at http://gcreddy.com/project/admin/login.php
+=========================== logs ===========================
+navigating to "http://gcreddy.com/project/admin/login.php", waiting until "load"
+============================================================
+    at FrameSession._navigate (C:\Users\DELL\AppData\Local\Temp\playwright-java-2541282771639552651\package\lib\server\chromium\crPage.js:506:35)
+    at async Frame._gotoAction (C:\Users\DELL\AppData\Local\Temp\playwright-java-2541282771639552651\package\lib\server\frames.js:534:28)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+        <a href="data:image/png;base64,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AAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIIJgAAAAAAQTAAEAAAAgGACIAAAAAAEEwABAAAAIJgACAAAAADBBEAAAAAACCYAAgAAAEAwARAAAAAAggmAAAAAABBMAAQAAACAYAIgAAAAAAQTAAEAAAAgmAAIAAAAAMEEQAAAAAAIJgACAAAAQDABEAAAAACCCYAAAAAAEEwABAAAAIBgAiAAAAAABBMAAQAAACCYAAgAAAAAwQRAAAAAAAgmAAIAAABAMAEQAAAAAIL9B03hPczkSC9YAAAAAElFTkSuQmCC" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+        <div class="title">login_With_Invalid_Data</div>
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -243,12 +343,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="3"
           author=""
-          tag="GCRShoptestSuite ManufacturersTest"
+          tag="GCRShoptestSuite"
           device="">
           <div class="test-detail">
             <p class="name">add_New_Manufacture</p>
             <p class="text-sm">
-              <span>12:00:15 PM</span> / <span>00:00:15:705</span>
+              <span>3:16:51 pm</span> / <span>00:00:00:002</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -257,15 +357,14 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">add_New_Manufacture</h5>
-<span class='badge badge-success'>01.12.2024 12:00:15 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:00:30 PM</span>
-<span class='badge badge-default'>00:00:15:705</span>
+<span class='badge badge-success'>01.12.2024 3:16:51 pm</span>
+<span class='badge badge-danger'>01.12.2024 3:16:51 pm</span>
+<span class='badge badge-default'>00:00:00:002</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
-<span class="badge badge-pill badge-default">ManufacturersTest</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
 <div class="m-t-10 m-l-5">Add new Manufacture</div>
 </div>
 </div><div class="detail-body mt-4">
@@ -274,1558 +373,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:15 PM</td>
+        <td>3:16:51 pm</td>
         <td>
           Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:17 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:18 PM</td>
-        <td>
-          Navigate to manufacturers tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:18 PM</td>
-        <td>
-          Adding new manufacture
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:19 PM</td>
-        <td>
-          Checking added new manufacture in the list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:00:30 PM</td>
-        <td>
-          Added new Manufacture successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author=""
-          tag="GCRShoptestSuite ManufacturersTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">update_Manufacturer</p>
-            <p class="text-sm">
-              <span>12:00:30 PM</span> / <span>00:00:20:487</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">update_Manufacturer</h5>
-<span class='badge badge-success'>01.12.2024 12:00:30 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:00:51 PM</span>
-<span class='badge badge-default'>00:00:20:487</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
-<span class="badge badge-pill badge-default">ManufacturersTest</span></div>
-<div class="m-t-10 m-l-5">Update Manufacture</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:30 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:31 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:32 PM</td>
-        <td>
-          Navigate to manufacturers tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:32 PM</td>
-        <td>
-          Click on manufacturer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:42 PM</td>
-        <td>
-          Update manufacturer name
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:44 PM</td>
-        <td>
-          Check updated manufacturer name in the list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:00:51 PM</td>
-        <td>
-          Manufacturer updated successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="5"
-          author=""
-          tag="GCRShoptestSuite ManufacturersTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">delete_Manufacturer</p>
-            <p class="text-sm">
-              <span>12:00:51 PM</span> / <span>00:00:26:621</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">delete_Manufacturer</h5>
-<span class='badge badge-success'>01.12.2024 12:00:51 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:01:17 PM</span>
-<span class='badge badge-default'>00:00:26:621</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
-<span class="badge badge-pill badge-default">ManufacturersTest</span></div>
-<div class="m-t-10 m-l-5">Delete Manufacture</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:51 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:52 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:53 PM</td>
-        <td>
-          Navigating to manufacturers tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:00:53 PM</td>
-        <td>
-          Click on Manufacturer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:07 PM</td>
-        <td>
-          Delete Manufacturer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:07 PM</td>
-        <td>
-          Check Manufacturer is deleted
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:01:17 PM</td>
-        <td>
-          Manufacturer Deleted successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="6"
-          author=""
-          tag="CategoriesTest GCRShoptestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">create_New_Category</p>
-            <p class="text-sm">
-              <span>12:01:19 PM</span> / <span>00:00:04:509</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">create_New_Category</h5>
-<span class='badge badge-success'>01.12.2024 12:01:19 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:01:23 PM</span>
-<span class='badge badge-default'>00:00:04:509</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
-<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
-<div class="m-t-10 m-l-5">Add new Category</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:19 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:20 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:21 PM</td>
-        <td>
-          Navigate to categories tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:22 PM</td>
-        <td>
-          Adding new category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:23 PM</td>
-        <td>
-          Checking added new category in the list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:01:23 PM</td>
-        <td>
-          Added new Cateogry successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="7"
-          author=""
-          tag="CategoriesTest GCRShoptestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">update_Category</p>
-            <p class="text-sm">
-              <span>12:01:23 PM</span> / <span>00:00:02:668</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">update_Category</h5>
-<span class='badge badge-success'>01.12.2024 12:01:23 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:01:26 PM</span>
-<span class='badge badge-default'>00:00:02:668</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
-<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
-<div class="m-t-10 m-l-5">Update added category</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:23 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:24 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:24 PM</td>
-        <td>
-          Navigate to categories tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:25 PM</td>
-        <td>
-          Click on category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:25 PM</td>
-        <td>
-          Update category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:26 PM</td>
-        <td>
-          Check updated category name in the list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:01:26 PM</td>
-        <td>
-          Cateogry updated successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="8"
-          author=""
-          tag="CategoriesTest GCRShoptestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">delete_Category</p>
-            <p class="text-sm">
-              <span>12:01:26 PM</span> / <span>00:00:03:249</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">delete_Category</h5>
-<span class='badge badge-success'>01.12.2024 12:01:26 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:01:29 PM</span>
-<span class='badge badge-default'>00:00:03:249</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
-<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
-<div class="m-t-10 m-l-5">Delete category</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:26 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:27 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:27 PM</td>
-        <td>
-          Navigate to categories tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:27 PM</td>
-        <td>
-          Click on category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:28 PM</td>
-        <td>
-          Delete the category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:29 PM</td>
-        <td>
-          Check Category is deleted
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:01:29 PM</td>
-        <td>
-          Category Deleted successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="9"
-          author=""
-          tag="CategoriesTest GCRShoptestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">add_Subcategory_In_Category</p>
-            <p class="text-sm">
-              <span>12:01:29 PM</span> / <span>00:00:06:423</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">add_Subcategory_In_Category</h5>
-<span class='badge badge-success'>01.12.2024 12:01:29 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:01:36 PM</span>
-<span class='badge badge-default'>00:00:06:423</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
-<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
-<div class="m-t-10 m-l-5">Add new subcategory in category</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:29 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:30 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:31 PM</td>
-        <td>
-          Navigate to Categories tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:32 PM</td>
-        <td>
-          Adding new Category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:33 PM</td>
-        <td>
-          Checking added new Category in the list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:33 PM</td>
-        <td>
-          Navigate to Category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:34 PM</td>
-        <td>
-          Adding new Subcategory in Category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:36 PM</td>
-        <td>
-          Checking added new Subcategory in the Category list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:01:36 PM</td>
-        <td>
-          Added new Subcateogry in the Category successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="10"
-          author=""
-          tag="CategoriesTest GCRShoptestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">update_Subcategory</p>
-            <p class="text-sm">
-              <span>12:01:36 PM</span> / <span>00:00:05:194</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">update_Subcategory</h5>
-<span class='badge badge-success'>01.12.2024 12:01:36 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:01:41 PM</span>
-<span class='badge badge-default'>00:00:05:194</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
-<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
-<div class="m-t-10 m-l-5">Update subcategory</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:36 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:36 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:38 PM</td>
-        <td>
-          Navigate to Categories tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:38 PM</td>
-        <td>
-          Navigate to Category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:39 PM</td>
-        <td>
-          Update Subcategory
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:41 PM</td>
-        <td>
-          Check updated Subcategory in the list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:01:41 PM</td>
-        <td>
-          Updated Subcategory in the Category successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="11"
-          author=""
-          tag="CategoriesTest GCRShoptestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">delete_Subcategory</p>
-            <p class="text-sm">
-              <span>12:01:41 PM</span> / <span>00:00:06:608</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">delete_Subcategory</h5>
-<span class='badge badge-success'>01.12.2024 12:01:41 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:01:47 PM</span>
-<span class='badge badge-default'>00:00:06:608</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">CategoriesTest</span>
-<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
-<div class="m-t-10 m-l-5">Delete Category and Subcategory</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:41 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:42 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:42 PM</td>
-        <td>
-          Navigate to Categories tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:42 PM</td>
-        <td>
-          Navigate to Subcategory
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:44 PM</td>
-        <td>
-          Delete the Subcategory
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:45 PM</td>
-        <td>
-          Check Subategory is deleted
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:45 PM</td>
-        <td>
-          Navigate to Category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:46 PM</td>
-        <td>
-          Click on Category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:46 PM</td>
-        <td>
-          Delete the Category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:47 PM</td>
-        <td>
-          Check Category is deleted
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:01:47 PM</td>
-        <td>
-          Category and Subcategory Deleted successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="12"
-          author=""
-          tag="GCRShoptestSuite ProductTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">add_New_Product</p>
-            <p class="text-sm">
-              <span>12:01:49 PM</span> / <span>00:00:06:910</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">add_New_Product</h5>
-<span class='badge badge-success'>01.12.2024 12:01:49 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:01:55 PM</span>
-<span class='badge badge-default'>00:00:06:910</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
-<span class="badge badge-pill badge-default">ProductTest</span></div>
-<div class="m-t-10 m-l-5">Add new Product</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:49 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:52 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:52 PM</td>
-        <td>
-          Navigate to Products tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:53 PM</td>
-        <td>
-          Add new Product 
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:55 PM</td>
-        <td>
-          Check added product in the list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:01:55 PM</td>
-        <td>
-          Added new Product successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="13"
-          author=""
-          tag="GCRShoptestSuite ProductTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">update_Product</p>
-            <p class="text-sm">
-              <span>12:01:55 PM</span> / <span>00:00:04:769</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">update_Product</h5>
-<span class='badge badge-success'>01.12.2024 12:01:55 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:02:00 PM</span>
-<span class='badge badge-default'>00:00:04:769</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
-<span class="badge badge-pill badge-default">ProductTest</span></div>
-<div class="m-t-10 m-l-5">Update Product</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:55 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:56 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:57 PM</td>
-        <td>
-          Navigate to Products tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:58 PM</td>
-        <td>
-          Click on Product
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:01:59 PM</td>
-        <td>
-          Update the Product
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:00 PM</td>
-        <td>
-          Check updated Product in the list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:00 PM</td>
-        <td>
-          Product updated successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="14"
-          author=""
-          tag="GCRShoptestSuite ProductTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">delete_Product</p>
-            <p class="text-sm">
-              <span>12:02:00 PM</span> / <span>00:00:04:140</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">delete_Product</h5>
-<span class='badge badge-success'>01.12.2024 12:02:00 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:02:04 PM</span>
-<span class='badge badge-default'>00:00:04:140</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
-<span class="badge badge-pill badge-default">ProductTest</span></div>
-<div class="m-t-10 m-l-5">Delete Product</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:00 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:01 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:01 PM</td>
-        <td>
-          Navigate to Products tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:02 PM</td>
-        <td>
-          Click on Product
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:03 PM</td>
-        <td>
-          Delete the Product
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:04 PM</td>
-        <td>
-          Check is Product Delete
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:04 PM</td>
-        <td>
-          Product Deleted successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="15"
-          author=""
-          tag="GCRShoptestSuite ProductTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">add_Product_Under_Catgory</p>
-            <p class="text-sm">
-              <span>12:02:04 PM</span> / <span>00:00:05:425</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">add_Product_Under_Catgory</h5>
-<span class='badge badge-success'>01.12.2024 12:02:04 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:02:10 PM</span>
-<span class='badge badge-default'>00:00:05:425</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
-<span class="badge badge-pill badge-default">ProductTest</span></div>
-<div class="m-t-10 m-l-5">Add new Product in Category</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:04 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:05 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:06 PM</td>
-        <td>
-          Navigate to Products tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:06 PM</td>
-        <td>
-          Adding new Category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:07 PM</td>
-        <td>
-          Navigate to Category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:08 PM</td>
-        <td>
-          Add new Product 
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:10 PM</td>
-        <td>
-          Check added product in the list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:10 PM</td>
-        <td>
-          Product Added in Category successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="16"
-          author=""
-          tag="GCRShoptestSuite ProductTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">update_Product_In_Category</p>
-            <p class="text-sm">
-              <span>12:02:10 PM</span> / <span>00:00:04:227</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">update_Product_In_Category</h5>
-<span class='badge badge-success'>01.12.2024 12:02:10 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:02:14 PM</span>
-<span class='badge badge-default'>00:00:04:227</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
-<span class="badge badge-pill badge-default">ProductTest</span></div>
-<div class="m-t-10 m-l-5">Update Product</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:10 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:10 PM</td>
-        <td>
-          Login to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:11 PM</td>
-        <td>
-          Navigate to Products tab
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:11 PM</td>
-        <td>
-          Navigate to Category
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:12 PM</td>
-        <td>
-          Click on Product
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:12 PM</td>
-        <td>
-          Update the Product
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:13 PM</td>
-        <td>
-          Check updated Product in the list
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:14 PM</td>
-        <td>
-          Product updated in category successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="17"
-          author=""
-          tag="LoginTest GCRShoptestSuite"
-          device="">
-          <div class="test-detail">
-            <p class="name">login_Test1</p>
-            <p class="text-sm">
-              <span>12:02:15 PM</span> / <span>00:00:02:693</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">login_Test1</h5>
-<span class='badge badge-success'>01.12.2024 12:02:15 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:02:18 PM</span>
-<span class='badge badge-default'>00:00:02:693</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">LoginTest</span>
-<span class="badge badge-pill badge-default">GCRShoptestSuite</span></div>
-<div class="m-t-10 m-l-5">Login with valid Username and Password</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:15 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:17 PM</td>
-        <td>
-          Navigate to My Account
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:18 PM</td>
-        <td>
-          Enter Valid E-Mail
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:18 PM</td>
-        <td>
-          Enter Valid Password
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:18 PM</td>
-        <td>
-          Click on Sign In
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:18 PM</td>
-        <td>
-          Verify User is Logged in
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:18 PM</td>
-        <td>
-          User Logged in Successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="18"
-          author=""
-          tag="GCRShoptestSuite RegisterUser"
-          device="">
-          <div class="test-detail">
-            <p class="name">ragister_User</p>
-            <p class="text-sm">
-              <span>12:02:19 PM</span> / <span>00:00:16:313</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">ragister_User</h5>
-<span class='badge badge-success'>01.12.2024 12:02:19 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:02:36 PM</span>
-<span class='badge badge-default'>00:00:16:313</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
-<span class="badge badge-pill badge-default">RegisterUser</span></div>
-<div class="m-t-10 m-l-5">New user Registration</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:19 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:21 PM</td>
-        <td>
-          Navigate to My Account
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Navigate to Registration
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Select Gender
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter First Name
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter Last Name
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter DOB
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter Email
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter Street Address
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter Suburb
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter Post Code
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter City
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter State
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Select Country
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter Telephone
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter Password
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Enter Confirm Password
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:22 PM</td>
-        <td>
-          Click on Continue Button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:36 PM</td>
-        <td>
-          Check Register Message
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:36 PM</td>
-        <td>
-          New User Register Successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="19"
-          author=""
-          tag="GCRShoptestSuite BuyProduct"
-          device="">
-          <div class="test-detail">
-            <p class="name">buy_Product</p>
-            <p class="text-sm">
-              <span>12:02:37 PM</span> / <span>00:00:13:972</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">buy_Product</h5>
-<span class='badge badge-success'>01.12.2024 12:02:37 PM</span>
-<span class='badge badge-danger'>01.12.2024 12:02:51 PM</span>
-<span class='badge badge-default'>00:00:13:972</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">GCRShoptestSuite</span>
-<span class="badge badge-pill badge-default">BuyProduct</span></div>
-<div class="m-t-10 m-l-5">Place the order</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:37 PM</td>
-        <td>
-          Navigate to application
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:39 PM</td>
-        <td>
-          Search the Product
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:39 PM</td>
-        <td>
-          Click on Product
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:39 PM</td>
-        <td>
-          Add Product to Cart
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:40 PM</td>
-        <td>
-          Checkout the Product
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:40 PM</td>
-        <td>
-          Login the User
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:41 PM</td>
-        <td>
-          Click on Continue
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:42 PM</td>
-        <td>
-          Confirm the order
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>12:02:51 PM</td>
-        <td>
-          Verify order Successful Message
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:02:51 PM</td>
-        <td>
-          Order placed Successfully
         </td>
       </tr>
   </tbody>
@@ -1842,235 +392,26 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">8</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>6</span>
+<span class='badge log badge-danger'>2</span>
 </span>
-<p class="name">CategoriesTest</p>
-<p class="duration text-sm">6 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>CategoriesTest</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:19 PM</td>
-<td>
-<a href="#" class="linked" test-id='6' id='6'>create_New_Category</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:23 PM</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>update_Category</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:26 PM</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>delete_Category</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:29 PM</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>add_Subcategory_In_Category</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:36 PM</td>
-<td>
-<a href="#" class="linked" test-id='10' id='10'>update_Subcategory</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:41 PM</td>
-<td>
-<a href="#" class="linked" test-id='11' id='11'>delete_Subcategory</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>3</span>
-</span>
-<p class="name">ManufacturersTest</p>
-<p class="duration text-sm">3 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>ManufacturersTest</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:00:15 PM</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>add_New_Manufacture</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:00:30 PM</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>update_Manufacturer</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:00:51 PM</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>delete_Manufacturer</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>5</span>
-</span>
-<p class="name">ProductTest</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>ProductTest</h4>
-<span status="pass" class='badge log pass-bg'>5 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:49 PM</td>
-<td>
-<a href="#" class="linked" test-id='12' id='12'>add_New_Product</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:55 PM</td>
-<td>
-<a href="#" class="linked" test-id='13' id='13'>update_Product</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:00 PM</td>
-<td>
-<a href="#" class="linked" test-id='14' id='14'>delete_Product</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:04 PM</td>
-<td>
-<a href="#" class="linked" test-id='15' id='15'>add_Product_Under_Catgory</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:10 PM</td>
-<td>
-<a href="#" class="linked" test-id='16' id='16'>update_Product_In_Category</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">LoginTest</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>LoginTest</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:15 PM</td>
-<td>
-<a href="#" class="linked" test-id='17' id='17'>login_Test1</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">AdminLoginTest</p>
+<p class="name">com.microsoft.playwright.PlaywrightException</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>AdminLoginTest</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<h4>com.microsoft.playwright.PlaywrightException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -2081,16 +422,16 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:00:03 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:16:37 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>login_Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:00:11 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:16:46 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>login_With_Invalid_Data</a>
 </td>
@@ -2099,51 +440,36 @@
 </table>
 </div>
 </li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">RegisterUser</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>RegisterUser</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:19 PM</td>
-<td>
-<a href="#" class="linked" test-id='18' id='18'>ragister_User</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>19</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">GCRShoptestSuite</p>
-<p class="duration text-sm">19 tests</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>GCRShoptestSuite</h4>
-<span status="pass" class='badge log pass-bg'>19 passed</span>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -2154,170 +480,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:00:03 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:16:37 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>login_Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:00:11 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:16:46 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>login_With_Invalid_Data</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:00:15 PM</td>
+<td>15:16:51 pm</td>
 <td>
 <a href="#" class="linked" test-id='3' id='3'>add_New_Manufacture</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:00:30 PM</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>update_Manufacturer</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:00:51 PM</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>delete_Manufacturer</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:19 PM</td>
-<td>
-<a href="#" class="linked" test-id='6' id='6'>create_New_Category</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:23 PM</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>update_Category</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:26 PM</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>delete_Category</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:29 PM</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>add_Subcategory_In_Category</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:36 PM</td>
-<td>
-<a href="#" class="linked" test-id='10' id='10'>update_Subcategory</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:41 PM</td>
-<td>
-<a href="#" class="linked" test-id='11' id='11'>delete_Subcategory</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:49 PM</td>
-<td>
-<a href="#" class="linked" test-id='12' id='12'>add_New_Product</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:01:55 PM</td>
-<td>
-<a href="#" class="linked" test-id='13' id='13'>update_Product</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:00 PM</td>
-<td>
-<a href="#" class="linked" test-id='14' id='14'>delete_Product</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:04 PM</td>
-<td>
-<a href="#" class="linked" test-id='15' id='15'>add_Product_Under_Catgory</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:10 PM</td>
-<td>
-<a href="#" class="linked" test-id='16' id='16'>update_Product_In_Category</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:15 PM</td>
-<td>
-<a href="#" class="linked" test-id='17' id='17'>login_Test1</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:19 PM</td>
-<td>
-<a href="#" class="linked" test-id='18' id='18'>ragister_User</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:37 PM</td>
-<td>
-<a href="#" class="linked" test-id='19' id='19'>buy_Product</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">BuyProduct</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>BuyProduct</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:02:37 PM</td>
-<td>
-<a href="#" class="linked" test-id='19' id='19'>buy_Product</a>
 </td>
 </tr>
 </tbody>
@@ -2337,25 +518,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 12, 2024 11:59:57 AM</h3>
+<h3>Jan 12, 2024 03:16:31 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 12, 2024 12:02:51 PM</h3>
+<h3>Jan 12, 2024 03:16:52 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>19</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -2371,12 +552,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>19</b> tests passed
+<div><small data-tooltip='33%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='66%'><b>2</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -2394,10 +575,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='12%'><b>19</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>133</b> others
+<small data-tooltip='40%'><b>2</b> events failed,
+<b data-tooltip='%'>3</b> others
 </small>
 </div>
 </div>
@@ -2413,7 +594,7 @@
 </div></div>
 <script>
 var timeline = {
-"login_Test":8.143,"login_With_Invalid_Data":2.376,"add_New_Manufacture":15.705,"update_Manufacturer":20.487,"delete_Manufacturer":26.621,"create_New_Category":4.509,"update_Category":2.668,"delete_Category":3.249,"add_Subcategory_In_Category":6.423,"update_Subcategory":5.194,"delete_Subcategory":6.608,"add_New_Product":6.91,"update_Product":4.769,"delete_Product":4.14,"add_Product_Under_Catgory":5.425,"update_Product_In_Category":4.227,"login_Test1":2.693,"ragister_User":16.313,"buy_Product":13.972
+"login_Test":9.101,"login_With_Invalid_Data":3.052,"add_New_Manufacture":0.002
 };
 </script>
 <div class="row">
@@ -2423,68 +604,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>CategoriesTest</td>
-<td>6</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>ManufacturersTest</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>ProductTest</td>
-<td>5</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>LoginTest</td>
+<td>GCRShoptestSuite</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>AdminLoginTest</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>RegisterUser</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>GCRShoptestSuite</td>
-<td>19</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>BuyProduct</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>33.333%</td>
 </tr>
 </tbody>
 </table></div>
@@ -2506,7 +631,7 @@ var timeline = {
 </tr>
 <tr>
 <td>Java Version: </td>
-<td>11.0.19</td>
+<td>17.0.9</td>
 </tr>
 </tbody>
 </table></div>
@@ -2517,8 +642,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 19,
-failParent: 0,
+passParent: 1,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -2534,11 +659,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 19,
-failEvents: 0,
+passEvents: 0,
+failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 133
+infoEvents: 3
 };
 </script>        </div>
       </div>

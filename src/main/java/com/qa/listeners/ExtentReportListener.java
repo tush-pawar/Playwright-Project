@@ -15,6 +15,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 import static com.qa.factory.playwrightFactory.takeScreenshot;
 
 public class ExtentReportListener implements ITestListener {
@@ -42,6 +44,7 @@ public class ExtentReportListener implements ITestListener {
 		extentReports = new ExtentReports();
 		ExtentSparkReporter reporter = new ExtentSparkReporter(OUTPUT_FOLDER + FILE_NAME);
 		reporter.config().setReportName("GCR SHOP Automation Test");
+		reporter.config().setTheme(Theme.DARK);
 		extentReports.attachReporter(reporter);
 		extentReports.setSystemInfo("System", "Windows");
 		extentReports.setSystemInfo("Operating System: ", System.getProperty("os.name"));
@@ -74,12 +77,13 @@ public class ExtentReportListener implements ITestListener {
 		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(),
 				result.getMethod().getDescription());
 
+//		extentTest.assignCategory(result.getTestContext().getSuite().getName());
 		extentTest.assignCategory(result.getTestContext().getSuite().getName());
 		/*
 		 * methodName = StringUtils.capitalize(StringUtils.join(StringUtils.
 		 * splitByCharacterTypeCamelCase(methodName), StringUtils.SPACE));
 		 */
-		extentTest.assignCategory(className);
+//		extentTest.assignCategory(className);
 		test.set(extentTest);
 		test.get().getModel().setStartTime(getTime(result.getStartMillis()));
 	}

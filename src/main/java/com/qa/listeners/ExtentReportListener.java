@@ -77,7 +77,6 @@ public class ExtentReportListener implements ITestListener {
 		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(),
 				result.getMethod().getDescription());
 
-//		extentTest.assignCategory(result.getTestContext().getSuite().getName());
 		extentTest.assignCategory(result.getTestContext().getSuite().getName());
 		/*
 		 * methodName = StringUtils.capitalize(StringUtils.join(StringUtils.
